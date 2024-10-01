@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know your meds</title>
+</head>
+<body>
+    <header>
+        <img src="" alt="six rights of medication administration">
+    </header>
+    <div id="home-display">
+        <h1>How well do you know your meds?</h1>
+        <h3>Let's find out!</h3>
+        <p><i>Instruction</i>: Multiple choice questions will be displayed randomly. Click on the button with the desired answer and click the "Submit" button.
+            An alert will then pop up which will tell if the answer was correct or not. By clicking the "OK" button, the next question will be displayed. Each correct answer
+            will earn a point which will be tallied and will be showed when all questions are answered. Player may not skip or go back to previous questions, but can retake 
+            the quiz just by choosing the "Play again" button at the end.</p>
+        <button class="btn start-btn">Start</button> 
+    </div>
+
+    <!-- Quiz box -->
+    <div id="quiz-box" class="">
+        <p id="quiz-num">1/20</p>
+        <p id="questions">Question</p>
+        <button class="btn submit-btn">Submit</button>
+    </div>
+
+    <!-- Alert box -->
+     <div id="alert-box" class="">
+        <img src="" alt="correct icon" class="hide">
+        <img src="" alt="wrong icon" class="hide">
+        <button class="btn ok-btn">OK</button>
+     </div>
+
+     <!-- Result box -->
+      <div id="result-box" class="">
+        <h2>Your score!</h2>
+        <h3 class="total-score">15 / 20</h3>
+        <button class="btn play-again-btn">Play again</button>
+        <button class="btn exit-game-btn">Exit game</button>
+      </div>
+</body>
+</html>
