@@ -4,8 +4,15 @@ document.addEventListener("DOMContentLoaded", function() {
     startBtn.addEventListener("click", startQuiz);
 })
 
+const homeDisplay = document.getElementById("home-display");
+let shuffledQuestion, currentQuestionIndex;
+let score = 0;
+
 function startQuiz() {
+    shuffledQuestion = quizData.sort(() => Math.random() - 0.5);
     console.log("Started!");
+    homeDisplay.classList.add("hide");
+
 }
 
 function showQuestion() {

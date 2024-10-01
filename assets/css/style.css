@@ -8,6 +8,10 @@ body {
     background-color: #f5b700;
 }
 
+.hide {
+    display: none;
+}
+
 header {
     display: flex;
     justify-content: center;
