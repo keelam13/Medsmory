@@ -37,3 +37,17 @@ header {
 .btn:hover {
     background-color: #8f8d8d;
 }
+
+@media screen and (min-width: 768px) {
+    .header-img {
+        width: 80%;
+    }
+    
+}
+
+@media screen and (min-width: 992px) {
+    .header-img {
+        width: 50%;
+    }
+    
+}
