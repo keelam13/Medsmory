@@ -50,20 +50,33 @@ function checkAnswer() {
     alertBox.classList.remove("hide");
 
     if (selectedAnswer === correctAnswer) {
-        score ++;
+        addScore();
         alertCorrect();
     } else {
         alertIncorrect();
     };
 }
 
-
 function alertCorrect() {
     let correct = document.getElementById("correct-icon");
    
     correct.classList.remove("hide");
     
-    
+    okBtn.addEventListener("click", function() {
+        alertBox.classList.add("hide");
+ 
+        currentQuestionIndex++;
+ 
+        if (shuffledQuestion.length > currentQuestionIndex) {
+            showQuestion();
+            console.log("Next question");
+        } else {
+            // showResult();
+            console.log("Showing result");
+        };
+ 
+         correct.classList.add("hide");
+    });
     
 }
 
@@ -72,12 +85,25 @@ function alertIncorrect() {
    
     inCorrect.classList.remove("hide");
     
-    
-    
+    okBtn.addEventListener("click", function() {
+        alertBox.classList.add("hide");
+
+        currentQuestionIndex++;
+
+        if (shuffledQuestion.length > currentQuestionIndex +1) {
+            showQuestion();
+            console.log("Next question");
+        } else {
+            // showResult();
+            console.log("Showing result");
+        };
+
+        inCorrect.classList.add("hide");
+    });
 }
 
 function addScore() {
-    
+
 }
 
 function showResult() {
