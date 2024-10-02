@@ -7,8 +7,9 @@ document.addEventListener("DOMContentLoaded", function() {
 const homeDisplay = document.getElementById("home-display");
 const questionElement = document.getElementById("question-element");
 const optionElement = document.getElementById("option-element");
+const submitBtn = document.getElementsByClassName("submit-btn")[0];
 
-let shuffledQuestion, currentQuestionIndex;
+let shuffledQuestion, currentQuestionIndex, selectedAnswer;
 let score = 0;
 let questionNum = 1;
 
@@ -20,7 +21,7 @@ function startQuiz() {
 }
 
 function showQuestion() {
-    
+
     let question = shuffledQuestion[currentQuestionIndex].question;
     let options = shuffledQuestion[currentQuestionIndex].options.sort(() => Math.random() - 0.5);
 
@@ -32,16 +33,28 @@ function showQuestion() {
       optionBtn.innerText = option;
       optionBtn.classList.add("option-btn")
       optionElement.appendChild(optionBtn);
-      optionBtn.addEventListener("click", function() {
-        //optionBtn.toggleAttribute("selected");
+      optionBtn.addEventListener("click", function(e) {
+            selectedAnswer = e.target.innerText;
       });
     });
-    console.log("Showing question!");
+    
+    submitBtn.addEventListener("click", checkAnswer);
+
 }
 
 function checkAnswer() {
+    let correctAnswer = shuffledQuestion[currentQuestionIndex].answer;
+    //let correct = document.getElementsByClassName("correct-icon");
+
+    if (selectedAnswer === correctAnswer) {
+        //score ++;
+        console.log("Correct Answer!");
+    } else {
+        console.log("Wrong answer!")
+    }
     
 }
+
 
 function alertAnswer() {
     
