@@ -103,6 +103,10 @@ function alertIncorrect() {
 }
 
 function addScore() {
+    score++
+
+    let scoreDisplay = document.getElementById("total-score");
+    scoreDisplay.innerText = `${score} / ${quizData.length}`;
 
 }
 
