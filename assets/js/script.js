@@ -8,19 +8,21 @@ const homeDisplay = document.getElementById("home-display");
 const questionElement = document.getElementById("question-element");
 const optionElement = document.getElementById("option-element");
 const submitBtn = document.getElementsByClassName("submit-btn")[0];
+const alertBox = document.getElementById("alert-box");
+const okBtn = document.getElementById("ok-btn"); 
 
 let shuffledQuestion, currentQuestionIndex, selectedAnswer;
 let score = 0;
 let questionNum = 1;
 
 function startQuiz() {
-    shuffledQuestion = quizData.sort(() => Math.random() - 0.5);
     currentQuestionIndex = 0;
     // homeDisplay.classList.add("hide");
     showQuestion();
 }
 
 function showQuestion() {
+    shuffledQuestion = quizData.sort(() => Math.random() - 0.5);
 
     let question = shuffledQuestion[currentQuestionIndex].question;
     let options = shuffledQuestion[currentQuestionIndex].options.sort(() => Math.random() - 0.5);
@@ -44,19 +46,33 @@ function showQuestion() {
 
 function checkAnswer() {
     let correctAnswer = shuffledQuestion[currentQuestionIndex].answer;
-    //let correct = document.getElementsByClassName("correct-icon");
+       
+    alertBox.classList.remove("hide");
 
     if (selectedAnswer === correctAnswer) {
-        //score ++;
-        console.log("Correct Answer!");
+        score ++;
+        alertCorrect();
     } else {
-        console.log("Wrong answer!")
-    }
-    
+        alertIncorrect();
+    };
 }
 
 
-function alertAnswer() {
+function alertCorrect() {
+    let correct = document.getElementById("correct-icon");
+   
+    correct.classList.remove("hide");
+    
+    
+    
+}
+
+function alertIncorrect() {
+    let inCorrect = document.getElementById("wrong-icon");
+   
+    inCorrect.classList.remove("hide");
+    
+    
     
 }
 
