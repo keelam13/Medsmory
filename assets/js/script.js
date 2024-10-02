@@ -5,18 +5,37 @@ document.addEventListener("DOMContentLoaded", function() {
 })
 
 const homeDisplay = document.getElementById("home-display");
+const questionElement = document.getElementById("question-element");
+const optionElement = document.getElementById("option-element");
+
 let shuffledQuestion, currentQuestionIndex;
 let score = 0;
 
 function startQuiz() {
     shuffledQuestion = quizData.sort(() => Math.random() - 0.5);
-    console.log("Started!");
-    homeDisplay.classList.add("hide");
-
+    currentQuestionIndex = 0;
+    // homeDisplay.classList.add("hide");
+    showQuestion();
 }
 
 function showQuestion() {
+    let question = shuffledQuestion[currentQuestionIndex].question;
+    let options = shuffledQuestion[currentQuestionIndex].options.sort(() => Math.random() - 0.5);
 
+    questionElement.textContent = question;
+
+    optionElement.innerHTML = "";
+    options.forEach(option => {
+      const optionBtn = document.createElement("button");
+      optionBtn.innerText = option;
+      optionBtn.classList.add("option-btn")
+      optionElement.appendChild(optionBtn);
+      optionBtn.addEventListener("click", function() {
+        optionBtn.toggleAttribute("selected");
+      });
+
+    });
+    console.log("Showing question!");
 }
 
 function checkAnswer() {
