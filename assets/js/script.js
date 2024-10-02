@@ -10,6 +10,7 @@ const optionElement = document.getElementById("option-element");
 
 let shuffledQuestion, currentQuestionIndex;
 let score = 0;
+let questionNum = 1;
 
 function startQuiz() {
     shuffledQuestion = quizData.sort(() => Math.random() - 0.5);
@@ -19,6 +20,7 @@ function startQuiz() {
 }
 
 function showQuestion() {
+    
     let question = shuffledQuestion[currentQuestionIndex].question;
     let options = shuffledQuestion[currentQuestionIndex].options.sort(() => Math.random() - 0.5);
 
@@ -31,9 +33,8 @@ function showQuestion() {
       optionBtn.classList.add("option-btn")
       optionElement.appendChild(optionBtn);
       optionBtn.addEventListener("click", function() {
-        optionBtn.toggleAttribute("selected");
+        //optionBtn.toggleAttribute("selected");
       });
-
     });
     console.log("Showing question!");
 }
