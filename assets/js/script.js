@@ -13,7 +13,7 @@ const okBtn = document.getElementById("ok-btn");
 
 let shuffledQuestion, currentQuestionIndex, selectedAnswer;
 let score = 0;
-let questionNum = 1;
+let questionNum = 0;
 
 function startQuiz() {
     currentQuestionIndex = 0;
@@ -27,6 +27,8 @@ function showQuestion() {
     let question = shuffledQuestion[currentQuestionIndex].question;
     let options = shuffledQuestion[currentQuestionIndex].options.sort(() => Math.random() - 0.5);
 
+    showQuizNum();
+    
     questionElement.textContent = question;
 
     optionElement.innerHTML = "";
@@ -107,6 +109,14 @@ function addScore() {
 
     let scoreDisplay = document.getElementById("total-score");
     scoreDisplay.innerText = `${score} / ${quizData.length}`;
+
+}
+
+function showQuizNum() {
+    questionNum++;
+
+    let quizNum = document.getElementById("quiz-num");
+    quizNum.innerText = `${questionNum} / ${quizData.length}`;
 
 }
 
