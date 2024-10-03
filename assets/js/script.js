@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("quit-btn").addEventListener("click", abortQuiz);
 })
 
-const homeDisplay = document.getElementById("home-display");
 const quizBox = document.getElementById("quiz-box");
 const questionElement = document.getElementById("question-element");
 const optionElement = document.getElementById("option-element");
@@ -118,9 +117,14 @@ function showResult() {
 
     document.getElementById("play-again-btn").addEventListener("click", restart);
 
+    document.getElementById("exit-btn").addEventListener("click", backHome);
+
 }
 
+
 function restart() {
+    document.getElementById("result-box").classList.add("hide");
+
     score = "";
     currentQuestionIndex = "";
     questionNum = "";
@@ -131,6 +135,15 @@ function restart() {
 function abortQuiz() {
     document.getElementById("quiz-box").classList.add("hide");
     document.getElementById("home-display").classList.remove("hide");
+
+    score = "";
+    currentQuestionIndex = "";
+    questionNum = "";
+}
+
+function backHome() {
+    document.getElementById("result-box").classList.add("hide");
+
     score = "";
     currentQuestionIndex = "";
     questionNum = "";
