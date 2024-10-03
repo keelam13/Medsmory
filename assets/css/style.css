@@ -49,11 +49,14 @@ header {
 #quiz-box {
     max-width: 830px;
     max-height: 450px;
-    margin: 20px auto auto;
+    margin: 20px auto;
     box-sizing: border-box;
     text-align: center;
     border: 2px solid;
     border-radius: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
 }
 
 #option-element {
@@ -89,6 +92,8 @@ header {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 10px 5px 5px #404e4d;
+    position: relative;
+    z-index: 1;
 }
 
 #alert-box button {
