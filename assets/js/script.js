@@ -83,11 +83,10 @@ function nextQuestion() {
     
     alertBox.classList.add("hide");
 
-    if (shuffledQuestion.length > currentQuestionIndex) {
+    if (shuffledQuestion.length > currentQuestionIndex + 1) {
             currentQuestionIndex++;
             console.log("Next question");
             showQuestion();
-            
         } else {
         showResult();
         console.log("Showing result");
@@ -113,7 +112,8 @@ function showQuizNum() {
 }
 
 function showResult() {
-    
+    document.getElementById("quiz-box").classList.add("hide");
+    document.getElementById("result-box").classList.remove("hide");
 }
 
 const quizData = [
