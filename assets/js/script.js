@@ -51,21 +51,20 @@ function showQuestion() {
 function checkAnswer() {
     let correctAnswer = shuffledQuestion[currentQuestionIndex].answer;
        
-    alertBox.classList.remove("hide");
-
     if (selectedAnswer === correctAnswer) {
+        document.getElementById("wrong-icon").toggleAttribute("hide");
         addScore();
-        alertCorrect();
+        alertAnswer();
     } else {
-        alertIncorrect();
+        document.getElementById("correct-icon").toggleAttribute("hide");
+        alertAnswer();
     };
 }
 
-function alertCorrect() {
-    let correct = document.getElementById("correct-icon");
-   
-    correct.classList.remove("hide");
+function alertAnswer() {
     
+    alertBox.classList.remove("hide");
+
     okBtn.addEventListener("click", function() {
         alertBox.classList.add("hide");
  
@@ -75,35 +74,14 @@ function alertCorrect() {
             showQuestion();
             console.log("Next question");
         } else {
-            // showResult();
+            showResult();
             console.log("Showing result");
         };
  
-         correct.classList.add("hide");
+        document.getElementById("wrong-icon").removeAttribute("hide");
+        document.getElementById("correct-icon").removeAttribute("hide");
     });
     
-}
-
-function alertIncorrect() {
-    let inCorrect = document.getElementById("wrong-icon");
-   
-    inCorrect.classList.remove("hide");
-    
-    okBtn.addEventListener("click", function() {
-        alertBox.classList.add("hide");
-
-        currentQuestionIndex++;
-
-        if (shuffledQuestion.length > currentQuestionIndex) {
-            showQuestion();
-            console.log("Next question");
-        } else {
-            // showResult();
-            console.log("Showing result");
-        };
-
-        inCorrect.classList.add("hide");
-    });
 }
 
 function addScore() {
