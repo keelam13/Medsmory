@@ -111,8 +111,21 @@ function showQuizNum() {
 }
 
 function showResult() {
+    
     document.getElementById("quiz-box").classList.add("hide");
+    
     document.getElementById("result-box").classList.remove("hide");
+
+    document.getElementById("play-again-btn").addEventListener("click", restart);
+
+}
+
+function restart() {
+    score = "";
+    currentQuestionIndex = "";
+    questionNum = "";
+
+    startQuiz();
 }
 
 function abortQuiz() {
