@@ -3,29 +3,27 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("quit-btn").addEventListener("click", abortQuiz);
 })
 
-const quizBox = document.getElementById("quiz-box");
 const questionElement = document.getElementById("question-element");
 const optionElement = document.getElementById("option-element");
-const submitBtn = document.getElementsByClassName("submit-btn")[0];
-const alertBox = document.getElementById("alert-box");
-const okBtn = document.getElementById("ok-btn"); 
 
 let shuffledQuestion, currentQuestionIndex, selectedAnswer;
 let score = 0;
 let questionNum = 0;
 
 function startQuiz() {
+    document.getElementById("home-display").classList.add("hide");
+    document.getElementById("quiz-box").classList.remove("hide");
+
     let shuffleArray = (array) => {
         let shuffledData = array.slice().sort(() => Math.random() - 0.5);
         return shuffledData;
     };
+
     currentQuestionIndex = 0;
-    console.log("Started game!");
     shuffledQuestion = shuffleArray(quizData);
-    currentQuestionIndex = 0;
-    homeDisplay.classList.add("hide");
-    quizBox.classList.remove("hide");
+    
     showQuestion();
+    console.log("Started game!");
 }
 
 function showQuestion() {
@@ -46,7 +44,7 @@ function showQuestion() {
     });
     
     showQuizNum();
-    submitBtn.addEventListener("click", checkAnswer);
+    document.getElementsByClassName("submit-btn")[0].addEventListener("click", checkAnswer);
     console.log("Showing question!");
 }
 
@@ -67,19 +65,21 @@ function checkAnswer() {
 
 function alertAnswer() {
     
-    alertBox.classList.remove("hide");
+    document.getElementById("alert-box").classList.remove("hide");
 
+    document.getElementById("ok-btn").addEventListener("click", nextQuestion);
+   
     console.log("Alert!");
 
-    okBtn.addEventListener("click", nextQuestion);
-    
 }
 
 function nextQuestion() {
 
     console.log("OK");
     
-    alertBox.classList.add("hide");
+    document.getElementById("alert-box").classList.add("hide");
+    document.getElementById("wrong-icon").removeAttribute("hide");
+    document.getElementById("correct-icon").removeAttribute("hide");
 
     if (shuffledQuestion.length > currentQuestionIndex + 1) {
             currentQuestionIndex++;
@@ -90,8 +90,6 @@ function nextQuestion() {
         console.log("Showing result");
         };
 
-    document.getElementById("wrong-icon").removeAttribute("hide");
-    document.getElementById("correct-icon").removeAttribute("hide");
 }
 
 function addScore() {
@@ -99,14 +97,19 @@ function addScore() {
 
     let scoreDisplay = document.getElementById("total-score");
     scoreDisplay.innerText = `${score} / ${quizData.length}`;
+
     console.log("Score ", score);
+
 }
 
 function showQuizNum() {
     questionNum++;
+
     let quizNum = document.getElementById("quiz-num");
     quizNum.innerText = `${questionNum} / ${quizData.length}`;
+
     console.log("Question ", questionNum);
+
 }
 
 function showResult() {
@@ -121,7 +124,6 @@ function showResult() {
 
 }
 
-
 function restart() {
     document.getElementById("result-box").classList.add("hide");
 
@@ -130,6 +132,7 @@ function restart() {
     questionNum = "";
 
     startQuiz();
+
 }
 
 function abortQuiz() {
@@ -139,6 +142,7 @@ function abortQuiz() {
     score = "";
     currentQuestionIndex = "";
     questionNum = "";
+
 }
 
 function backHome() {
@@ -147,6 +151,7 @@ function backHome() {
     score = "";
     currentQuestionIndex = "";
     questionNum = "";
+    
 }
 
 const quizData = [
