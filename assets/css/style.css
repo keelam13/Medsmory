@@ -32,6 +32,7 @@ header {
 .header-img {
     width: 100%;
     border-radius: 5px;
+    box-shadow: 10px 5px 5px #404e4d;
 }
 
 #home-display {
@@ -76,17 +77,34 @@ header {
     margin-top: 10px;
 }
 
+/* Alert box */
+
+#alert-box {
+    max-width: 400px;
+    max-height: 400px;
+    margin: 20px auto auto;
+    text-align: center;
+    background-color: #5bc0eb;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px #404e4d;
+}
+
+#alert-box button {
+    width: 50%;
+    margin-top: 20px;
+}
+
 /* Result box */
 #result-box {
     background-color: #c3423f;
     max-width: 530px;
     max-height: 530px;
-    margin-left: auto;
-    margin-right: auto;
-    box-sizing: border-box;
+    margin: 20px auto auto;
     text-align: center;
     border-radius: 10px;
     padding: 10px;
+    box-shadow: 10px 5px 5px #404e4d;
 }
 
 #total-score {
