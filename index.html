@@ -13,7 +13,7 @@
     </header>
 
     <!-- Home page -->
-    <div id="home-display" class="">
+    <div id="home-display">
         <h1>How well do you know your meds?</h1>
         <h3>Let's find out!</h3>
         <p><i>Instruction</i>: Multiple choice questions will be displayed randomly. Click on the button with the desired answer and click the "Submit" button.
@@ -25,8 +25,9 @@
 
     <!-- Quiz box -->
     <div id="quiz-box" class="hide">
+        <i class="fa-regular fa-circle-xmark" id="quit-btn"></i>
         <p id="quiz-num"></p>
-        <p id="question-element">This drug blocks the action of a protein in the kidneys called sodium-glucose co-transporter 2 (SGLT2), which stops the kidneys passing glucose from the blood into the urine. Thereby causing the kidneys to pass more glucose into the urine and reducing the glucose level in the blood. It also increases the elimination of salt and water in the urine.</p>
+        <p id="question-element"></p>
         <div id="option-element"></div>
         <button class="btn submit-btn">Submit</button>
     </div>
@@ -41,10 +42,11 @@
      <!-- Result box -->
       <div id="result-box" class="hide">
         <h2>Your score!</h2>
-        <h3 id="total-score">20 / 20</h3>
+        <h3 id="total-score"></h3>
         <button class="btn play-again-btn">Play again</button>
         <button class="btn exit-game-btn">Exit game</button>
       </div>
       <script src="assets/js/script.js"></script>
+      <script src="https://kit.fontawesome.com/ce2deac578.js" crossorigin="anonymous"></script>
 </body>
 </html>
