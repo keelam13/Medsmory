@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
 })
 
 const homeDisplay = document.getElementById("home-display");
+const quizBox = document.getElementById("quiz-box");
 const questionElement = document.getElementById("question-element");
 const optionElement = document.getElementById("option-element");
 const submitBtn = document.getElementsByClassName("submit-btn")[0];
@@ -16,13 +17,14 @@ let score = 0;
 let questionNum = 0;
 
 function startQuiz() {
-    currentQuestionIndex = 0;
-    // homeDisplay.classList.add("hide");
+    homeDisplay.classList.add("hide");
+    quizBox.classList.remove("hide");
     showQuestion();
 }
 
 function showQuestion() {
     shuffledQuestion = quizData.sort(() => Math.random() - 0.5);
+    currentQuestionIndex = 0;
 
     let question = shuffledQuestion[currentQuestionIndex].question;
     let options = shuffledQuestion[currentQuestionIndex].options.sort(() => Math.random() - 0.5);
@@ -92,7 +94,7 @@ function alertIncorrect() {
 
         currentQuestionIndex++;
 
-        if (shuffledQuestion.length > currentQuestionIndex +1) {
+        if (shuffledQuestion.length > currentQuestionIndex) {
             showQuestion();
             console.log("Next question");
         } else {

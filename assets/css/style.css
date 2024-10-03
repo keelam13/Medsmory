@@ -76,8 +76,35 @@ header {
     margin-top: 10px;
 }
 
+/* Result box */
+#result-box {
+    background-color: #c3423f;
+    max-width: 530px;
+    max-height: 530px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#total-score {
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: #404e4d;
+    color: white;
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+    font-size: 3rem;
+    padding: 10px;
+}
 
 
+#result-box button {
+    margin: 30px 30px;
+}
 @media screen and (min-width: 768px) {
     .header-img {
         width: 80%;
