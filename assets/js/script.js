@@ -45,6 +45,7 @@ function showQuestion() {
     
     showQuizNum();
     document.getElementsByClassName("submit-btn")[0].addEventListener("click", checkAnswer);
+    
     console.log("Showing question!");
 }
 
