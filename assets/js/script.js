@@ -106,7 +106,7 @@ function showQuizNum() {
     questionNum++;
 
     let quizNum = document.getElementById("quiz-num");
-    quizNum.innerText = `${questionNum} / ${quizData.length}`;
+    quizNum.innerText = `Question ${questionNum} / ${quizData.length}`;
 
     console.log("Question ", questionNum);
 
@@ -151,7 +151,7 @@ function backHome() {
     score = "";
     currentQuestionIndex = "";
     questionNum = "";
-    
+
 }
 
 const quizData = [
