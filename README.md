@@ -70,8 +70,11 @@ This multiple choice quiz will help players get familiarized with different kind
 
 ### Colour Scheme
 
-![Color pallete]()
-The website uses the scheme to go with the colors of nature in the photography. Jocular green was used as a background color to stay true to the color of nature, and wizard blue as the clear skies as hover effect color on the input fields and submit button, and as response color on the buttons. The color palette was generated through the Coolors website.
+![Color pallete](assets/images/color-palate.webp)
+The color palette was generated through the Coolors website.
+* The color #f5b700 was used as the main background.
+* The color #5bc0eb was used as the backgrounf of the alert box.
+* The colors #c3423f and #404e4d in combination were used for in the result display.
 
 
 ### Typography
