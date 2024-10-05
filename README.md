@@ -3,7 +3,14 @@
 
 ![Am I responsive?]()
 
-View Know your meds on [GitHub Pages](https://github.com/keelam13/know-your-meds)
+View the deployed site: [Know your meds](https://github.com/keelam13/know-your-meds)
+
+Test your knowledge on medications commonly prescribed for different ailments. This quiz is inspired by the creator's desire to know what the differrent medications are for.
+
+Among the six rights for medication administration is the right medication. The healthcare professional must make sure the the client is receiving the right medication prescribed: medication label must be checked, name, dosage, and strength of the medication must be verified.
+
+This multiple choice quiz will help players get familiarized with different kinds of drugs and will refresh their knowledge on drug mode of action, while having fun.
+
 ---
 
 ## CONTENTS
