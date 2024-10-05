@@ -79,16 +79,14 @@ The color palette was generated through the Coolors website.
 
 ### Typography
 
-Fonts used for this site were imported from [Google Fonts](https://fonts.google.com/).
-* Lato Google font was used as the primary font for the site for content readability.
+Font used for this site was imported from [Google Fonts](https://fonts.google.com/).
 
-  ![Main font]()
-
-* Lobster Google font was used as the logo font for it to standout.
+![Font Sora](assets/images/google-fonts.webp)
+* Sora Google font was used as the primary font for the site for content readability.
   
 ### Imagery
 
-Photos of the trails, camp sites, and views from the trails and atop the summit were used in the website. Some of these photos are personal collections and some are taken from other hikers/photographers on the web, which I included in the [Credits](#credits) section.
+Photo used for the site was taken from the web, which I included in the [Credits](#credits) section.
 
 ### Wireframes
 
