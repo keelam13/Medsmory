@@ -70,7 +70,7 @@ This multiple choice quiz will help players get familiarized with different kind
 
 ### Colour Scheme
 
-![Color pallete](assets/images/color-palate.webp)
+![Color pallete](assets/images/color-palette.webp)
 The color palette was generated through the Coolors website.
 * The color #f5b700 was used as the main background.
 * The color #5bc0eb was used as the backgrounf of the alert box.
