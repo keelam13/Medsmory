@@ -52,40 +52,18 @@ This multiple choice quiz will help players get familiarized with different kind
 
 ## User Experience (UX)
 
-### Initial Discussion
-Mt. Pulag Hikers is a small group of hikers who regularly hike up the 3rd highest mountain in the Philippines, and are constantly looking for like minded individuals who want to join them on the hikes. Members are a mix of beginners and experienced hikers who learn from each other through the hikes. 
-
-
-Through the help of social media, Mt. Pulag is getting noticed by avid hikers and non-hikers because of its pristine beauty. Dubbed as The playground of the gods, a lot of tourists are eager to conquer Mt. Pulag and experience what it has to offer.
-
-#### Key information for the site
-* What are the requirements in climbing Mt. Pulag.
-* What are the available trails to take and their level of difficulty.
-* How to join the group.
-* How to contact the group.
-* What to look forward to / updates.
-
-
 ### User Stories
 
-#### Client Goals
-* To have the accessibility to view the site on a range of device screens.
-* To make it easy for potential joiners to know what Mt. Pulag Hikers is about, and how to join in on the hikes.
-* To have a glimpse of what they could experience and see during the hikes. 
-* To allow users to easily contact Mt. Pulag Hikers for any concerns.
-
 #### First Time Visitor Goals
-* I want to easily navigate through the website to find what I’m looking for.
-* I want to know the purpose of Mt. Pulag Hikers and how to take part in it.
-* I want to have an idea on what to expect to better prepare when joining.
-* I want to be able to see their social media.
+* I want to take part of the quiz and improve my knowledge on medications.
+* I want to ba able to take the quiz on different device screen-sizes.
+* I want to easily navigate through the site.
 
 #### Returning Visitor Goals
-* I want to find up to date information regarding scheduled hikes and be able to join a new one.
-* I want to be able to easily contact Mt. Pulag hikers for questions I might have.
+* 
 
 #### Frequent Visitor Goals
-* I want to find new options in climbing Mt. Pulag.
+* 
 
 
 ## Design
