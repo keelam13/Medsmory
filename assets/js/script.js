@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementsByClassName("start-btn")[0].addEventListener("click", startQuiz);
-    document.getElementById("quit-btn").addEventListener("click", abortQuiz);
+    document.getElementById("quit-btn").addEventListener("click", exitBtn);
 })
 
 const questionElement = document.getElementById("question-element");
@@ -116,13 +116,12 @@ function showQuizNum() {
 function showResult() {
     
     document.getElementById("quiz-box").classList.add("hide");
-    
     document.getElementById("result-box").classList.remove("hide");
 
     document.getElementById("play-again-btn").addEventListener("click", restart);
-
-    document.getElementById("exit-btn").addEventListener("click", backHome);
-
+    document.getElementById("exit-btn").addEventListener("click", function(e) {
+        exitBtn(e)
+    });
 }
 
 function restart() {
@@ -136,18 +135,14 @@ function restart() {
 
 }
 
-function abortQuiz() {
-    document.getElementById("quiz-box").classList.add("hide");
+function exitBtn(e) {
     document.getElementById("home-display").classList.remove("hide");
-
-    score = "";
-    currentQuestionIndex = "";
-    questionNum = "";
-
-}
-
-function backHome() {
-    document.getElementById("result-box").classList.add("hide");
+   
+    if (e.target.innerText === "Exit game") {
+        document.getElementById("result-box").classList.add("hide");
+    } else {
+        document.getElementById("quiz-box").classList.add("hide");
+    };
 
     score = "";
     currentQuestionIndex = "";
