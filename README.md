@@ -145,91 +145,72 @@ Photo used for the site was taken from the web, which I included in the [Credits
 
 ### General features
 
-The website only has a single page which is divided into three sections, which are accessible from the navigation menu (About us, Trails and Join us sections). A second page is also added as a response page which is shown once a user correctly fills out and submits the form on the Join Us section.
+The website only has a single page which displays the different sections during navigation. These are the home display, quiz display, alert display and the result display. The site has a fixed background for consistency. The site is also responsive to a range of device screens.
 
-#### Hero Section
+* The page has a favicon in the browser tab.
 
-This section has a fixed background image which show a view of Mt. Pulag where the group climbs on a regular basis. It also contains a cover text with the tag Mt. Pulag is known for and the address.
+![Tab Favicon]()
 
-* Hero section view on larger screens
+* The page displays every section with the site title and the hero image.
 
-![Hero browser]()
+![Title]()
 
-* Hero section view on mobile devices
+#### Home Display
 
-![Hero mobile]()
+This section contains the instruction on how to play and a "Start" button, which initiates the quiz.
 
-#### Footer
+* Home section view on larger screens
 
-Both pages have a footer which contains a qoute from Edmund Hillary and social media icon links to facebook, instagram, youtube and tiktok. Icons were used to keep the footer clean and because they are universally recognisable. For users to be able to contact Mt. Pulag hikers, mobile phone numbers and email address are also shown alongside the social media icons. Icons are also animated on hover.
+![Home browser]()
 
-* Footer view on larger screens
+* Home section view on mobile devices
 
-![Footer Browser]()
+![Home mobile]()
 
-* Footer view on mobile devices
+#### Quiz Display
 
-![Footer mobile]()
+It displays the question number, the question and the buttons with options. Player can select an answer by clicking on the button containing the desired answer. Below is a "Submit" button to confirm the selected answer. The selected answer will then be checked. On the upper right corner is a close button which brings the player back to home display.
+
+* Quiz view on larger screens
+
+![Quiz Browser]()
+
+* Quiz view on mobile devices
+
+![Quiz mobile]()
 
 
-### About us
+### Alert Display
 
-The section is further broken down into subsectioned, which gives the user information about the group, what potential joiners should prepare, and the gallery which may attract users in joining. The images in the gallery are stacked horizontally which users can scroll to view.
+The display is a way to tell the player whether the answer was correct or not. It will show a tick icon in color green, if the answer is correct, and otherwise it will show a x icon in red color. The box also contains an "OK" button to acknowledge the alert and move on to the next question.
 
-* About us section view on larger devices
+* Alert display view on larger devices
 
-![About us browser]()
+![Alert display us browser]()
 
-* About us section view on mobile devices
+* Alert displayview on mobile devices
 
-![About us mobile]()
+![Alert display us mobile]()
 
-### Popular trails
+### Result Display
 
-This sections give the user information on popular trails when climbing Mt. Pulag. It contaions the name of the trail, difficulty, where the jump-off point is and for whom is it ideal for. It also contains a picture of the trail for the user to have an idea what to expect. A subsection is also higlighted with a blinking text and border to cath the attention of the user on a soon to open post.
+The game ends by showing how well the player did on the quiz. Each correct answer will be counted during the game and will be displayed over the number of questions on the result section. Under the score are two buttons: The "Play again" button which lets the player to retake the quiz, and the "Exit game" button which brings player back to home display.   
 
-* Popular trails section view on larger screens
+* Result Display view on larger screens
 
-![Popular trails browser]()
+![Result Display browser]()
 
-* Popular trails section view on mobile devices
+* Result Display view on mobile devices
 
-![Popular trails mobile]()
-
-### Join Us
-
-This section gives the user the opportunity to establish contact with, and to join the group. It has a form where users can enter their names and Email address for the group to get back to them. From the same form, users can also choose already which trail they prefer to take by clicking on a button. All inputs are also set as required so the fields must be filled out properly before submitting. The text input field is animated for largers screens when the pointer hovers over it. The submit button is also animated on hover. Once the submit button is clicked, it will lead to the response page.
-
-* Join us section view on larger screens
-
-![Join us browser]()
-
-* Join us section view on mobile devices
-
-![Join us mobile]()
-
-### Response page
-
-A message welcoming the user to the team after submitting the form and lets them know someone will reach out to them within 24 hours. It also says that the user may now prepare for the climb. The page is set to be redirected to the home page in 10 seconds or users may click on the here link, or Back to home page on the navigation bar to go back to the home page.
-
-* Response page view on larger screens
-
-![Response page browser]()
-
-* Response page view on mobile devices
-
-![Response page mobile]()
+![Result Display mobile]()
 
 
 ### Future Implementations
 
-* Add some maps for the popular trails.
-* Add link to the email address.
-* Use images with better resolutions.
+* Categorize the questions by specific drug class (eg. anti-hypertensives , anti-diabetics, etc). 
+* Add level of difficulty or more categories.
+* Allow players to save their scores and show high scores.
 * Improve quaity of commit messages and commit every after bit of changes.
-* Work on the website performances on mobile devices and desktops.
-* Proper use of the flex box.
-
 
 ### Accessibility
 
@@ -237,9 +218,9 @@ I have been mindful during coding to ensure that the website is as accessible fr
 
 1. Using semantic HTML.
 2. Using descriptive alt attributes on images on the site.
-3. Providing information for screen readers where there are icons used and no text - e.g. social networks.
+3. Providing information for screen readers where there are icons used and no text.
 4. Ensuring that there is a sufficient colour contrast throughout the site.
-5. Ensuring menus are accessible by fixing it on top of the screen.
+5. Using hover state on all buttons for player to see which buttons they are hovering over.
 
 ## Technologies Used
 
