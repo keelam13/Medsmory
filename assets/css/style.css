@@ -25,15 +25,19 @@ body {
 }
 
 /* Home page */
-header {
-    display: flex;
-    justify-content: center;
-}
+/* header {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+} */
 
-.header-img {
+#logo {
     width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 5px;
-    box-shadow: 10px 5px 5px #404e4d;
+    box-shadow: 5px 5px 5px 5px #404e4d;
 }
 
 #home-display {
@@ -148,15 +152,16 @@ header {
 #result-box button {
     margin: 30px 30px;
 }
+
 @media screen and (min-width: 768px) {
-    .header-img {
+    #logo {
         width: 80%;
     }
     
 }
 
 @media screen and (min-width: 992px) {
-    .header-img {
+    #logo {
         width: 50%;
     } 
 }
