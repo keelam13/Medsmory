@@ -51,6 +51,8 @@ function showQuestion() {
 
 function checkAnswer() {
     let correctAnswer = shuffledQuestion[currentQuestionIndex].answer;
+
+    document.getElementById("overlay").classList.remove("hide");
        
     if (selectedAnswer === correctAnswer) {
         document.getElementById("wrong-icon").toggleAttribute("hide");
@@ -78,6 +80,7 @@ function nextQuestion() {
 
     console.log("OK");
     
+    document.getElementById("overlay").classList.add("hide");
     document.getElementById("alert-box").classList.add("hide");
     document.getElementById("wrong-icon").removeAttribute("hide");
     document.getElementById("correct-icon").removeAttribute("hide");
