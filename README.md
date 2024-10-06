@@ -226,56 +226,54 @@ I have been mindful during coding to ensure that the website is as accessible fr
 
 ### Languages Used
 
-HTML and CSS were used to create this website.
+HTML, CSS and JavaScript were used to create this website.
 
 ### Other Technologies used
 
 * [Balsamiq](https://balsamiq.com/) - Used to create wireframes.
+* [Miro](https://miro.com) - Used to create the framework.
 * [Git](https://git-scm.com/) - For version control.
 * [Github](https://github.com/) - To save and store the files for the website.
 * [Google Fonts](https://fonts.google.com/) - To import the fonts used on the website.
 * [Font Awesome](https://fontawesome.com/) - For the iconography on the website.
 * [Google Dev Tools](https://developer.chrome.com/docs/devtools) - To troubleshoot and test features, solve issues with responsiveness and styling.
-* [Tiny PNG](https://tinify.com/web/convert) To compress images.
+* [Design.com](https://www.design.com/) To create a logo.
 * [Birme](https://www.birme.net/?target_width=500&target_height=300&no_resize=true&image_format=webp) To resize images and change to webp format.
 * [Favicon.io](https://favicon.io/) To create favicon.
 * [Am I Responsive?](https://ui.dev/amiresponsive) To show the website image on a range of devices.
 * [Coolors](https://coolors.co/) was used to create the color palette.
-* [EzGif](https://ezgif.com) was used to resize GIF images.
-* [Design.com](https://www.design.com/) wasused to design the logo.
+* [Removebg](https://www.remove.bg/) was used to remove backgrounds from images.
 
 ## Deployment & Local Development
 
 ### Deployment
 
-The site is deployed using GitHub Pages - Mt. Pulag Hikers
+The site is deployed using GitHub Pages - [Medsmory](https://keelam13.github.io/Medsmory/)
 
 To Deploy the site using GitHub Pages:
 1. Login (or signup) to Github.
-2. Go to the repository for this project, keelam13/mt-pulag-hikers
+2. Go to the repository for this project, keelam13/Medsmory
 3. Click the settings button.
 4. Select pages in the left hand navigation menu.
 5. From the source dropdown select main branch and press save.
 6. The site has now been deployed, please note that this process may take a few minutes before the site goes live.
 
-The live link can be found [here](https://keelam13.github.io/know-your-meds/).
-
 ### Local Development
 
 #### How to Fork
 
-To fork the Know your meds repository:
+To fork the Medsmory repository:
 
 1. Log in (or sign up) to Github.
-2. Go to the repository for this project, keelam13/mt-pulag-hikers.
+2. Go to the repository for this project, keelam13/Medsmory.
 3. Click the Fork button in the top right corner.
 
 #### How to Clone
 
-To clone the Know your meds repository:
+To clone the Medsmory repository:
 
 1. Log in (or sign up) to GitHub.
-2. Go to the repository for this project, keelam13/mt-pulag-hikers.
+2. Go to the repository for this project, keelam13/Medsmory.
 3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
 4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
 5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
