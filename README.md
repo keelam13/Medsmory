@@ -90,34 +90,56 @@ Photo used for the site was taken from the web, which I included in the [Credits
 
 ### Wireframes
 
-Wireframes are created for all the page sections using Balsamiq.
-
 #### Mobile devices
-* Home Page
+* Home display
 
 ![Mobile home page]()
 
 * Quiz display
 
-![Mobile response page]()
+![Mobile quiz display]()
+
+* Alert display
+
+![Mobile alert display]()
+
+* Result display
+
+![Mobile result display]()
 
 #### Tablets
-* Home Page
+* Home display
 
 ![Tablet home page]()
 
 * Quiz display
 
-![Tablet response page]()
+![Tablet quiz page]()
+
+* Alert display
+
+![Tablet alert display]()
+
+* Result display
+
+![Tablet result display]()
 
 #### Desktop
-* Home Page
+* Home display
 
 ![Browser home page]()
 
 * Quiz display
 
-![Browser response page]()
+![Browser quiz page]()
+
+* Alert display
+
+![Browser alert display]()
+
+* Result display
+
+![Browser result display]()
 
 ## Features
 
