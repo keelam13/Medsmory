@@ -1,17 +1,28 @@
 document.addEventListener("DOMContentLoaded", function() {
-    document.getElementsByClassName("start-btn")[0].addEventListener("click", startQuiz);
+    document.getElementsByClassName("start-btn")[0].addEventListener("click", chooseCat);
     document.getElementById("quit-btn").addEventListener("click", exitBtn);
 })
 
 const questionElement = document.getElementById("question-element");
 const optionElement = document.getElementById("option-element");
 
-let shuffledQuestion, currentQuestionIndex, selectedAnswer;
+let quizData, shuffledQuestion, currentQuestionIndex, selectedAnswer;
 let score = 0;
 let questionNum = 0;
 
-function startQuiz() {
+function chooseCat(e){
     document.getElementById("home-display").classList.add("hide");
+    document.getElementById("category-box").classList.remove("hide");
+
+    if(e.target.innerText === "What is the drug?") {
+        quizData = nameDrug;
+    } else {
+        quizData = brandName;
+    }
+
+
+}
+function startQuiz() {
     document.getElementById("quiz-box").classList.remove("hide");
 
     let shuffleArray = (array) => {
