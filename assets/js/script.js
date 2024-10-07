@@ -153,7 +153,7 @@ function exitBtn(e) {
 
 }
 
-const quizData = [
+const nameDrug = [
     {
         question: "This drug blocks the action of a protein in the kidneys called sodium-glucose co-transporter 2 (SGLT2), which stops the kidneys passing glucose from the blood into the urine. Thereby causing the kidneys to pass more glucose into the urine and reducing the glucose level in the blood. It also increases the elimination of salt and water in the urine.", 
         options: ["Dapagliflozin (Forxiga)", "Melperone (Bunil)", "Escitalopram (Lexapro)"],
@@ -254,4 +254,107 @@ const quizData = [
         options:["Tocilizumab (Actemra)","Piritramide (Dipidolor)","Safinamide (Xadago)"],
         answer:"Tocilizumab (Actemra)"
     },
+]
+
+const brandName = [
+    {
+        question: "Tocilizumab",
+        options:[Actemra, Forxiga, Okrido],
+        answer:"Actemra"
+    },
+    {
+        question: "Dapagliflozin",
+        options: [Forxiga, Okrido, Bunil],
+        answer: "Forxiga"
+    },
+    {
+        question: "Prednisolone",
+        options: [Okrido, Bunil, Zanidip],
+        answer: "Okrido"
+    },
+    {
+        question: "Melperone",
+        options: [Bunil, Zanidip, Lexapro],
+        answer: "Bunil"
+    },
+    {
+        question: "Lercanidipin",
+        options: [Zanidip, Lexapro, Rulid],
+        answer: "Zanidip"
+    },
+    {
+        question: "Escitalopram",
+        options: [Lexapro, Rulid, Eliquis],
+        answer:  "Lexapro"
+    },
+    {
+        question: "Roxithromycin",
+        options: [Rulid, Eliquis, Cordarex],
+        answer:  "Rulid"
+    },
+    {
+        question: "Apixaban",
+        options: [Eliquis, Cordarex, Lyrica],
+        answer: "Eliquis"
+    },
+    {
+        question: "Amiodarone",
+        options: [Cordarex, Lyrica, Elavil],
+        answer: "Cordarex"
+    },
+    {
+        question: "Pregabalin",
+        options: [Lyrica, Elavil, Xadago],
+        answer: "Lyrica"
+    },
+    {
+        question: "Amitriptyline",
+        options: [Elavil, Xadago, Ebrantil],
+        answer: "Elavil"
+    },
+    {
+        question: "Safinamide",
+        options: [Xadago, Ebrantil, Esidrix],
+        answer: "Xadago"
+    },
+    {
+        question: "Urapidil",
+        options: [Ebrantil, Esidrix, Vomex],
+        answer: "Ebrantil"
+    },
+    {
+        question: "Hydrochlorothiazide",
+        options: [Esidrix, Vomex, Zofran],
+        answer: "Esidrix"
+    },
+    {
+        question: "Dimenhydrinate",
+        options: [Vomex, Zofran, Dipidolor],
+        answer: "Vomex"
+    },
+    {
+        question: "Ondansetron",
+        options: [Zofran, Dipidolor, Duragesic],
+        answer: "Zofran"
+    },
+    {
+        question: "Piritramide",
+        options: [Dipidolor, Duragesic, FerMed],
+        answer: "Dipidolor"
+    },
+    {
+        question: "Fentanyl",
+        options: [Duragesic, FerMed, Humalog],
+        answer: "Duragesic"
+    },
+    {
+        question: "Iron sucrose",
+        options: [FerMed, Humalog, Actemra],
+        answer: "FerMed"
+    },
+    {
+        question: "Insulin lispro",
+        options: [Humalog, Actemra, Forxiga],
+        answer: "Humalog"
+    }
 ]
