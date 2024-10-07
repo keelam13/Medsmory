@@ -44,6 +44,24 @@ body {
     text-align: center;
 }
 
+/* Category box */
+#category-box {
+    max-width: 830px;
+    margin: 20px auto auto;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#category-box img {
+    width: 20%;
+}
+
+.cat-btn {
+    display: block;
+    width: 200px;
+    margin: 10px auto;
+    padding: 10px;
+}
 /* Quiz box */
 
 #quiz-box {
