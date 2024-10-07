@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    document.getElementsByClassName("start-btn")[0].addEventListener("click", chooseCat);
+    document.getElementsByClassName("start-btn")[0].addEventListener("click", showCat);
     document.getElementById("quit-btn").addEventListener("click", exitBtn);
 })
 
@@ -10,19 +10,27 @@ let quizData, shuffledQuestion, currentQuestionIndex, selectedAnswer;
 let score = 0;
 let questionNum = 0;
 
-function chooseCat(e){
+function showCat () {
     document.getElementById("home-display").classList.add("hide");
     document.getElementById("category-box").classList.remove("hide");
-
-    if(e.target.innerText === "What is the drug?") {
+    chooseCat();
+}
+function chooseCat(){
+    
+    document.getElementsByClassName("cat-btn")[0].addEventListener("click", function() {
         quizData = nameDrug;
-    } else {
+        startQuiz();
+    });
+    
+    document.getElementsByClassName("cat-btn")[1].addEventListener("click", function() {
         quizData = brandName;
-    }
-
+        startQuiz();
+    })
 
 }
+
 function startQuiz() {
+    document.getElementById("category-box").classList.add("hide");
     document.getElementById("quiz-box").classList.remove("hide");
 
     let shuffleArray = (array) => {
@@ -270,102 +278,102 @@ const nameDrug = [
 const brandName = [
     {
         question: "Tocilizumab",
-        options:[Actemra, Forxiga, Okrido],
+        options:["Actemra", "Forxiga", "Okrido"],
         answer:"Actemra"
     },
     {
         question: "Dapagliflozin",
-        options: [Forxiga, Okrido, Bunil],
+        options: ["Forxiga", "Okrido", "Bunil"],
         answer: "Forxiga"
     },
     {
         question: "Prednisolone",
-        options: [Okrido, Bunil, Zanidip],
+        options: ["Okrido", "Bunil", "Zanidip"],
         answer: "Okrido"
     },
     {
         question: "Melperone",
-        options: [Bunil, Zanidip, Lexapro],
+        options: ["Bunil", "Zanidip", "Lexapro"],
         answer: "Bunil"
     },
     {
         question: "Lercanidipin",
-        options: [Zanidip, Lexapro, Rulid],
+        options: ["Zanidip", "Lexapro", "Rulid"],
         answer: "Zanidip"
     },
     {
         question: "Escitalopram",
-        options: [Lexapro, Rulid, Eliquis],
+        options: ["Lexapro", "Rulid", "Eliquis"],
         answer:  "Lexapro"
     },
     {
         question: "Roxithromycin",
-        options: [Rulid, Eliquis, Cordarex],
+        options: ["Rulid", "Eliquis", "Cordarex"],
         answer:  "Rulid"
     },
     {
         question: "Apixaban",
-        options: [Eliquis, Cordarex, Lyrica],
+        options: ["Eliquis", "Cordarex", "Lyrica"],
         answer: "Eliquis"
     },
     {
         question: "Amiodarone",
-        options: [Cordarex, Lyrica, Elavil],
+        options: ["Cordarex", "Lyrica", "Elavil"],
         answer: "Cordarex"
     },
     {
         question: "Pregabalin",
-        options: [Lyrica, Elavil, Xadago],
+        options: ["Lyrica", "Elavil", "Xadago"],
         answer: "Lyrica"
     },
     {
         question: "Amitriptyline",
-        options: [Elavil, Xadago, Ebrantil],
+        options: ["Elavil", "Xadago", "Ebrantil"],
         answer: "Elavil"
     },
     {
         question: "Safinamide",
-        options: [Xadago, Ebrantil, Esidrix],
+        options: ["Xadago", "Ebrantil", "Esidrix"],
         answer: "Xadago"
     },
     {
         question: "Urapidil",
-        options: [Ebrantil, Esidrix, Vomex],
+        options: ["Ebrantil", "Esidrix", "Vomex"],
         answer: "Ebrantil"
     },
     {
         question: "Hydrochlorothiazide",
-        options: [Esidrix, Vomex, Zofran],
+        options: ["Esidrix", "Vomex", "Zofran"],
         answer: "Esidrix"
     },
     {
         question: "Dimenhydrinate",
-        options: [Vomex, Zofran, Dipidolor],
+        options: ["Vomex", "Zofran", "Dipidolor"],
         answer: "Vomex"
     },
     {
         question: "Ondansetron",
-        options: [Zofran, Dipidolor, Duragesic],
+        options: ["Zofran", "Dipidolor", "Duragesic"],
         answer: "Zofran"
     },
     {
         question: "Piritramide",
-        options: [Dipidolor, Duragesic, FerMed],
+        options: ["Dipidolor", "Duragesic", "FerMed"],
         answer: "Dipidolor"
     },
     {
         question: "Fentanyl",
-        options: [Duragesic, FerMed, Humalog],
+        options: ["Duragesic", "FerMed", "Humalog"],
         answer: "Duragesic"
     },
     {
         question: "Iron sucrose",
-        options: [FerMed, Humalog, Actemra],
+        options: ["FerMed", "Humalog", "Actemra"],
         answer: "FerMed"
     },
     {
         question: "Insulin lispro",
-        options: [Humalog, Actemra, Forxiga],
+        options: ["Humalog", "Actemra", "Forxiga"],
         answer: "Humalog"
     }
 ]
