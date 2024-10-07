@@ -1,14 +1,16 @@
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementsByClassName("start-btn")[0].addEventListener("click", showCat);
-    document.getElementById("quit-btn").addEventListener("click", exitBtn);
+    document.getElementById("quit-btn").addEventListener("click", function() {
+        document.getElementById("quiz-box").classList.add("hide");
+        resetQuiz();
+    });
 })
 
 const questionElement = document.getElementById("question-element");
 const optionElement = document.getElementById("option-element");
 
 let quizData, shuffledQuestion, currentQuestionIndex, selectedAnswer;
-let score = 0;
-let questionNum = 0;
+let score, questionNum;
 
 function showCat () {
     document.getElementById("home-display").classList.add("hide");
@@ -39,6 +41,8 @@ function startQuiz() {
     };
 
     currentQuestionIndex = 0;
+    score = 0;
+    questionNum = 0;
     shuffledQuestion = shuffleArray(quizData);
     
     showQuestion();
@@ -141,8 +145,9 @@ function showResult() {
     document.getElementById("result-box").classList.remove("hide");
 
     document.getElementById("play-again-btn").addEventListener("click", restart);
-    document.getElementById("exit-btn").addEventListener("click", function(e) {
-        exitBtn(e)
+    document.getElementById("exit-btn").addEventListener("click", function() {
+        document.getElementById("result-box").classList.add("hide");
+        resetQuiz();
     });
 }
 
@@ -157,15 +162,8 @@ function restart() {
 
 }
 
-function exitBtn(e) {
+function resetQuiz() {
     document.getElementById("home-display").classList.remove("hide");
-   
-    if (e.target.innerText === "Exit game") {
-        document.getElementById("result-box").classList.add("hide");
-    } else {
-        document.getElementById("quiz-box").classList.add("hide");
-    };
-
     score = "";
     currentQuestionIndex = "";
     questionNum = "";
