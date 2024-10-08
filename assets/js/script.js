@@ -126,17 +126,23 @@ function nextQuestion() {
 }
 
 function quitConfirmation() {
-    document.getElementById("confirm-yes").addEventListener("click", function() {
-        document.getElementById("quit-confirm").classList.add("hide");
-        document.getElementById("overlay").classList.add("hide");
-        document.getElementById("quiz-box").classList.add("hide");
-        resetQuiz();
-    });
+    const confirmBtns = document.querySelectorAll(".confirm-btn");
 
-    document.getElementById("confirm-no").addEventListener("click", function() {
-        document.getElementById("quit-confirm").classList.add("hide");
-        document.getElementById("overlay").classList.add("hide");
-    });
+    for (let i = 0; i < confirmBtns.length; i++) {
+        confirmBtns[i].addEventListener("click", function () {
+            if (confirmBtns[i].innerText === "Yes") {
+                document.getElementById("quit-confirm").classList.add("hide");
+                document.getElementById("overlay").classList.add("hide");
+                document.getElementById("quiz-box").classList.add("hide");
+                resetQuiz();
+            } else if (confirmBtns[i].innerText === "No") {
+                document.getElementById("quit-confirm").classList.add("hide");
+                document.getElementById("overlay").classList.add("hide");
+            };
+            
+        });
+    }
+   
 }
 
 function addScore() {
