@@ -138,11 +138,9 @@ function quitConfirmation() {
             } else if (confirmBtns[i].innerText === "No") {
                 document.getElementById("quit-confirm").classList.add("hide");
                 document.getElementById("overlay").classList.add("hide");
-            };
-            
+            }; 
         });
     }
-   
 }
 
 function addScore() {
@@ -170,26 +168,25 @@ function showResult() {
     document.getElementById("quiz-box").classList.add("hide");
     document.getElementById("result-box").classList.remove("hide");
 
-    document.getElementById("play-again-btn").addEventListener("click", restart);
-    document.getElementById("exit-btn").addEventListener("click", function() {
-        document.getElementById("result-box").classList.add("hide");
-        resetQuiz();
-    });
-}
+    const resultBtns = document.querySelectorAll(".result-btn");
 
-function restart() {
-    document.getElementById("result-box").classList.add("hide");
-
-    score = "";
-    currentQuestionIndex = "";
-    questionNum = "";
-
-    startQuiz();
-
+    for (let i = 0; i < resultBtns.length; i++) {
+        resultBtns[i].addEventListener("click", function () {
+            if (resultBtns[i].innerText === "Play again") {
+                document.getElementById("result-box").classList.add("hide");
+                resetQuiz();
+                startQuiz();
+            } else if (resultBtns[i].innerText === "Exit game") {
+                document.getElementById("result-box").classList.add("hide");
+                resetQuiz();
+            }; 
+        });
+    }
 }
 
 function resetQuiz() {
     document.getElementById("home-display").classList.remove("hide");
+
     score = "";
     currentQuestionIndex = "";
     questionNum = "";
@@ -212,7 +209,8 @@ const nameDrug = [
         options:["Melperone (Bunil)","Apixaban (Eliquis)","Amiodarone (Cordarex)"],
         answer:"Melperone (Bunil)"
     },
-    {
+];
+/*    {
         question:"It is a calcium channel blocker which inhibits the contractile processes of the myocardial smooth muscle cells, causing dilation of the coronary and systemic arteries, increased oxygen delivery to the myocardial tissue, decreased total peripheral resistance, decreased systemic blood pressure, and decreased afterload.",
         options:["Lercanidipin (Zanidip)","Safinamide (Xadago)","Ondansetron (Zofran)"],
         answer:"Lercanidipin (Zanidip)"
@@ -400,4 +398,4 @@ const brandName = [
         options: ["Humalog", "Actemra", "Forxiga"],
         answer: "Humalog"
     }
-];
+]; */
