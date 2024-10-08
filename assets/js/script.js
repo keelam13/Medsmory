@@ -1,3 +1,8 @@
+/* jshint esversion: 6 */
+
+const questionElement = document.getElementById("question-element");
+const optionElement = document.getElementById("option-element");
+
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("start-btn").addEventListener("click", showCat);
     document.getElementById("quit-btn").addEventListener("click", function() {
@@ -7,10 +12,8 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 })
 
-const questionElement = document.getElementById("question-element");
-const optionElement = document.getElementById("option-element");
-
-let quizData, shuffledQuestion, currentQuestionIndex, selectedAnswer;
+let quizData, shuffledQuestion, currentQuestionIndex;
+let selectedAnswer, correctAnswer;
 let score, questionNum;
 
 function showCat () {
@@ -74,7 +77,7 @@ function showQuestion() {
 }
 
 function checkAnswer() {
-    let correctAnswer = shuffledQuestion[currentQuestionIndex].answer;
+    correctAnswer = shuffledQuestion[currentQuestionIndex].answer;
 
     document.getElementById("overlay").classList.remove("hide");
        
