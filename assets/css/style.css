@@ -115,6 +115,25 @@ header {
     background-color: #5bc0eb;
 }
 
+/* Quit Confirmation box */
+
+.quit-confirmation {
+    max-width: 500px;
+    margin: 20px auto auto;
+    padding: 1em;
+    border: 4px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.confirm-img {
+    max-width: 30%;
+}
+
+.confirm-btn {
+    display: flex;
+}
+
 /* Alert box */
 
 #alert-box {
