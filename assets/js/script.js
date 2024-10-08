@@ -96,6 +96,8 @@ function checkAnswer() {
 function alertAnswer() {
     
     document.getElementById("alert-box").classList.remove("hide");
+    document.getElementById("correct-answer").innerText = `
+    Correct Answer: ${correctAnswer}`
 
     document.getElementById("ok-btn").addEventListener("click", nextQuestion);
    
