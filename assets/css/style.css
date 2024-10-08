@@ -123,11 +123,6 @@ header img {
     background-color:rgba(0,0,0,0.5);
 }
 
-#alert-box button {
-    width: 50%;
-    margin-top: 20px;
-}
-
 #alert-box img[hide] {
     display: none;
 }
