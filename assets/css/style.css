@@ -94,6 +94,10 @@ header {
     padding: 0;
 }
 
+.quit-btn:hover {
+    color: #c3423f;
+}
+
 #quiz-num {
     font-weight: bolder;
 }
