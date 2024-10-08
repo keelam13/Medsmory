@@ -26,7 +26,7 @@ body {
 
 /* Home page */
 
-#logo {
+header img {
     width: 100%;
     display: block;
     margin-left: auto;
@@ -176,14 +176,14 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-    #logo {
+    header img {
         width: 80%;
     }
     
 }
 
 @media screen and (min-width: 992px) {
-    #logo {
+    header img {
         width: 50%;
     } 
 }
