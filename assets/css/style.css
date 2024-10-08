@@ -33,6 +33,7 @@ body {
 
 .btn:hover {
     background-color: #8f8d8d;
+    cursor: pointer;
 }
 
 /* Home page */
@@ -113,6 +114,7 @@ header {
 .option-btn:hover,
 .option-btn:focus {
     background-color: #5bc0eb;
+    cursor: pointer;
 }
 
 /* Quit Confirmation box */
