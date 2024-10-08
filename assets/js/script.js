@@ -145,13 +145,13 @@ function quitConfirmation() {
     for (let i = 0; i < confirmBtns.length; i++) {
         confirmBtns[i].addEventListener("click", function () {
             if (confirmBtns[i].innerText === "Yes") {
-                quitConfirmation.classList.add("hide");
+                confirmQuitBox.classList.add("hide");
                 overlay.classList.add("hide");
                 quizBox.classList.add("hide");
                 homeDisplay.classList.remove("hide");
                 resetQuiz();
             } else if (confirmBtns[i].innerText === "No") {
-                quitConfirmation.classList.add("hide");
+                confirmQuitBox.classList.add("hide");
                 overlay.classList.add("hide");
             }; 
         });
