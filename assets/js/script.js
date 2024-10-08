@@ -1,8 +1,9 @@
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("start-btn").addEventListener("click", showCat);
     document.getElementById("quit-btn").addEventListener("click", function() {
-        document.getElementById("quiz-box").classList.add("hide");
-        resetQuiz();
+        document.getElementById("quit-confirm").classList.remove("hide");
+        document.getElementById("overlay").classList.remove("hide");
+        quitConfirmation();
     });
 })
 
@@ -117,6 +118,20 @@ function nextQuestion() {
         console.log("Showing result");
         };
 
+}
+
+function quitConfirmation() {
+    document.getElementById("confirm-yes").addEventListener("click", function() {
+        document.getElementById("quit-confirm").classList.add("hide");
+        document.getElementById("overlay").classList.add("hide");
+        document.getElementById("quiz-box").classList.add("hide");
+        resetQuiz();
+    });
+
+    document.getElementById("confirm-no").addEventListener("click", function() {
+        document.getElementById("quit-confirm").classList.add("hide");
+        document.getElementById("overlay").classList.add("hide");
+    });
 }
 
 function addScore() {

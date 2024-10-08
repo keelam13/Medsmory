@@ -118,16 +118,19 @@ header {
 /* Quit Confirmation box */
 
 .quit-confirmation {
-    max-width: 500px;
+    max-width: 400px;
     margin: 20px auto auto;
     padding: 1em;
-    border: 4px solid black;
+    background-color: #5bc0eb;
     border-radius: 10px;
+    box-shadow: 10px 5px 5px #404e4d;
     text-align: center;
+    position: relative;
+    z-index: 1;
 }
 
 .confirm-img {
-    max-width: 30%;
+    max-width: 50%;
 }
 
 .confirm-btn {
