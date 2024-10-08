@@ -58,14 +58,16 @@ header img {
 
 /* Category box */
 #category-box {
-    max-width: 830px;
+    max-width: 500px;
     margin: 20px auto auto;
-    box-sizing: border-box;
+    padding: 1em;
+    border: 4px solid black;
+    border-radius: 10px;
     text-align: center;
 }
 
-#category-box img {
-    width: 20%;
+.category-img {
+    max-width: 50%;
 }
 
 /* Quiz box */
