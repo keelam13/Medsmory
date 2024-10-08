@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    document.getElementsByClassName("start-btn")[0].addEventListener("click", showCat);
+    document.getElementById("start-btn").addEventListener("click", showCat);
     document.getElementById("quit-btn").addEventListener("click", function() {
         document.getElementById("quiz-box").classList.add("hide");
         resetQuiz();
