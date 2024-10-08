@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Description" content="Medsmory is a quiz to test and more importantly help improve your knowledge on medications.">
+    <meta name="description" content="Medsmory is a quiz to test and more importantly help improve your knowledge on medications.">
     <meta name="keywords" content="Medsmory, quiz, medication quiz, drug quiz, online quiz, medication knowledge, drug knowledge">
     <meta name="author" content="Keevin Aroco">
 
@@ -12,62 +12,70 @@
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
 
     <!-- Style sheet -->
      <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+
+    <!-- Header -->
     <header>
-        <img src="assets/images/logo.png" alt="six rights of medication administration" id="logo">
+        <img src="assets/images/logo.png" alt="Medsmory logo" id="logo">
     </header>
 
-    <!-- Home page -->
-    <div id="home-display">
-        <h1>How well do you know your meds?</h1>
-        <h2>Let's find out!</h2>
-        <p><i>Instruction</i>: Multiple choice questions will be displayed randomly. Click on the button with the desired answer and click the "Submit" button.
-            An alert will then pop up which will tell if the answer was correct or not. By clicking the "OK" button, the next question will be displayed. Each correct answer
-            will earn a point which will be tallied and will be showed when all questions are answered. Player may not skip or go back to previous questions, but can retake 
-            the quiz just by choosing the "Play again" button at the end.</p>
-        <button class="btn start-btn">Start</button> 
-    </div>
+    <!-- Main content -->
+    <main>
+        <!-- Home page -->
+        <section id="home-display">
+            <h1>How well do you know your meds?</h1>
+            <h2>Let's find out!</h2>
+            <p><i>Instruction</i>: Multiple choice questions will be displayed randomly. Click on the button with the desired answer and click the "Submit" button.
+                An alert will then pop up which will tell if the answer was correct or not. By clicking the "OK" button, the next question will be displayed. Each correct answer
+                will earn a point which will be tallied and will be showed when all questions are answered. Player may not skip or go back to previous questions, but can retake 
+                the quiz just by choosing the "Play again" button at the end.</p>
+            <button class="btn start-btn">Start</button> 
+        </section>
 
-    <!-- Category box -->
-     <div id="category-box" class="hide">
-        <img src="assets/images/rx.png" alt="a prescription pad and a medicine capsule">
-        <h2>Please choose category.</h2>
-        <button class="btn cat-btn">Name the drug</button>
-        <button class="btn cat-btn">Brand names</button>
-     </div>
+        <!-- Category box -->
+        <section id="category-box" class="hide">
+            <img src="assets/images/rx.png" alt="a prescription pad and a medicine capsule">
+            <h2>Please choose category.</h2>
+            <div>
+                <button class="btn cat-btn">Name the drug</button>
+                <button class="btn cat-btn">Brand names</button>
+            </div>
+        </section>
 
-    <!-- Quiz box -->
-    <div id="quiz-box" class="hide">
-        <i class="fa-regular fa-circle-xmark" id="quit-btn"></i>
-        <p id="quiz-num"></p>
-        <p id="question-element"></p>
-        <div id="option-element"></div>
-        <button class="btn submit-btn">Submit</button>
-    </div>
+        <!-- Quiz box -->
+        <section id="quiz-box" class="hide">
+            <i class="fa-regular fa-circle-xmark" id="quit-btn"></i>
+            <p id="quiz-num"></p>
+            <p id="question-element"></p>
+            <div id="option-element"></div>
+            <button class="btn submit-btn">Submit</button>
+        </section>
 
-    <!-- Overlay -->
-    <div id="overlay" class="hide"></div>
+        <!-- Overlay -->
+        <div id="overlay" class="hide"></div>
 
-    <!-- Alert box -->
-     <div id="alert-box" class="hide">
-        <img src="assets/images/alert-correct.png" alt="correct icon" id="correct-icon">
-        <img src="assets/images/alert-wrong.png" alt="wrong icon" id="wrong-icon">
-        <button id="ok-btn" class="btn">OK</button>
-     </div>
+        <!-- Alert box -->
+        <section id="alert-box" class="hide">
+            <img src="assets/images/alert-correct.png" alt="correct icon" id="correct-icon">
+            <img src="assets/images/alert-wrong.png" alt="wrong icon" id="wrong-icon">
+            <button id="ok-btn" class="btn">OK</button>
+        </section>
 
-     <!-- Result box -->
-      <div id="result-box" class="hide">
-        <h2>Your score!</h2>
-        <h3 id="total-score">1/20</h3>
-        <button class="btn" id="play-again-btn">Play again</button>
-        <button class="btn" id="exit-btn">Exit game</button>
-      </div>
+        <!-- Result box -->
+        <section id="result-box" class="hide">
+            <h2>Your score!</h2>
+            <h3 id="total-score">1/20</h3>
+            <div>
+                <button class="btn" id="play-again-btn">Play again</button>
+                <button class="btn" id="exit-btn">Exit game</button>
+            </div>
+        </section>
       <script src="assets/js/script.js"></script>
       <script src="https://kit.fontawesome.com/ce2deac578.js" crossorigin="anonymous"></script>
 </body>
