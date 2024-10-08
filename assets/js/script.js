@@ -4,7 +4,7 @@ const questionElement = document.getElementById("question-element");
 const optionElement = document.getElementById("option-element");
 
 document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("start-btn").addEventListener("click", showCat);
+    document.getElementById("start-btn").addEventListener("click", showCategory);
     document.getElementById("quit-btn").addEventListener("click", function() {
         document.getElementById("quit-confirm").classList.remove("hide");
         document.getElementById("overlay").classList.remove("hide");
@@ -16,23 +16,26 @@ let quizData, shuffledQuestion, currentQuestionIndex;
 let selectedAnswer, correctAnswer;
 let score, questionNum;
 
-function showCat () {
+function showCategory() {
     document.getElementById("home-display").classList.add("hide");
     document.getElementById("category-box").classList.remove("hide");
-    chooseCat();
+    chooseCategory();
 }
-function chooseCat(){
-    
-    document.getElementById("category-one").addEventListener("click", function() {
-        quizData = nameDrug;
-        startQuiz();
-    });
-    
-    document.getElementById("category-two").addEventListener("click", function() {
-        quizData = brandName;
-        startQuiz();
-    });
+function chooseCategory(){
 
+    const categoryBtns = document.querySelectorAll(".category-btn");
+
+    for (let i = 0; i < categoryBtns.length; i++) {
+        categoryBtns[i].addEventListener("click", function () {
+            if (categoryBtns[i].id === "category-one") {
+                quizData = nameDrug;
+                startQuiz();
+            } else if (categoryBtns[i].id === "category-two") {
+                quizData = brandName;
+                startQuiz();
+            }; 
+        });
+    }
 }
 
 function startQuiz() {
@@ -295,7 +298,7 @@ const nameDrug = [
         options:["Tocilizumab (Actemra)","Piritramide (Dipidolor)","Safinamide (Xadago)"],
         answer:"Tocilizumab (Actemra)"
     },
-];
+]; */
 
 const brandName = [
     {
@@ -313,7 +316,7 @@ const brandName = [
         options: ["Okrido", "Bunil", "Zanidip"],
         answer: "Okrido"
     },
-    {
+/*    {
         question: "Melperone",
         options: ["Bunil", "Zanidip", "Lexapro"],
         answer: "Bunil"
@@ -397,5 +400,5 @@ const brandName = [
         question: "Insulin lispro",
         options: ["Humalog", "Actemra", "Forxiga"],
         answer: "Humalog"
-    }
-]; */
+    } */
+];
