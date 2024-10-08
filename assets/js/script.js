@@ -67,7 +67,7 @@ function showQuestion() {
     });
     
     showQuizNum();
-    document.getElementsByClassName("submit-btn")[0].addEventListener("click", checkAnswer);
+    document.getElementById("submit-btn").addEventListener("click", checkAnswer);
     
     console.log("Showing question!");
 }
