@@ -19,12 +19,12 @@ function showCat () {
 }
 function chooseCat(){
     
-    document.getElementsByClassName("cat-btn")[0].addEventListener("click", function() {
+    document.getElementById("category-one").addEventListener("click", function() {
         quizData = nameDrug;
         startQuiz();
     });
     
-    document.getElementsByClassName("cat-btn")[1].addEventListener("click", function() {
+    document.getElementById("category-two").addEventListener("click", function() {
         quizData = brandName;
         startQuiz();
     })
