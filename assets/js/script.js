@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("overlay").classList.remove("hide");
         quitConfirmation();
     });
-})
+});
 
 let quizData, shuffledQuestion, currentQuestionIndex;
 let selectedAnswer, correctAnswer;
@@ -31,7 +31,7 @@ function chooseCat(){
     document.getElementById("category-two").addEventListener("click", function() {
         quizData = brandName;
         startQuiz();
-    })
+    });
 
 }
 
@@ -63,7 +63,7 @@ function showQuestion() {
     options.forEach(option => {
       const optionBtn = document.createElement("button");
       optionBtn.innerText = option;
-      optionBtn.classList.add("option-btn")
+      optionBtn.classList.add("option-btn");
       optionElement.appendChild(optionBtn);
       optionBtn.addEventListener("click", function(e) {
             selectedAnswer = e.target.innerText;
@@ -88,7 +88,7 @@ function checkAnswer() {
     } else {
         document.getElementById("correct-icon").toggleAttribute("hide");
         alertAnswer();
-    };
+    }
 
     console.log("Submitted!", "Checked!");
 }
@@ -97,7 +97,7 @@ function alertAnswer() {
     
     document.getElementById("alert-box").classList.remove("hide");
     document.getElementById("correct-answer").innerText = `
-    Correct Answer: ${correctAnswer}`
+    Correct Answer: ${correctAnswer}`;
 
     document.getElementById("ok-btn").addEventListener("click", nextQuestion);
    
@@ -121,7 +121,7 @@ function nextQuestion() {
         } else {
         showResult();
         console.log("Showing result");
-        };
+        }
 
 }
 
@@ -140,7 +140,7 @@ function quitConfirmation() {
 }
 
 function addScore() {
-    score++
+    score++;
 
     let scoreDisplay = document.getElementById("total-score");
     scoreDisplay.innerText = `${score} / ${quizData.length}`;
@@ -291,7 +291,7 @@ const nameDrug = [
         options:["Tocilizumab (Actemra)","Piritramide (Dipidolor)","Safinamide (Xadago)"],
         answer:"Tocilizumab (Actemra)"
     },
-]
+];
 
 const brandName = [
     {
@@ -394,4 +394,4 @@ const brandName = [
         options: ["Humalog", "Actemra", "Forxiga"],
         answer: "Humalog"
     }
-]
+];
