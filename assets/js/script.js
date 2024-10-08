@@ -142,6 +142,7 @@ function quitConfirmation() {
                 document.getElementById("quit-confirm").classList.add("hide");
                 document.getElementById("overlay").classList.add("hide");
                 document.getElementById("quiz-box").classList.add("hide");
+                document.getElementById("home-display").classList.remove("hide");
                 resetQuiz();
             } else if (confirmBtns[i].innerText === "No") {
                 document.getElementById("quit-confirm").classList.add("hide");
@@ -186,6 +187,7 @@ function showResult() {
                 startQuiz();
             } else if (resultBtns[i].innerText === "Exit game") {
                 document.getElementById("result-box").classList.add("hide");
+                document.getElementById("home-display").classList.remove("hide");
                 resetQuiz();
             }; 
         });
@@ -193,8 +195,7 @@ function showResult() {
 }
 
 function resetQuiz() {
-    document.getElementById("home-display").classList.remove("hide");
-
+    
     score = "";
     currentQuestionIndex = "";
     questionNum = "";
