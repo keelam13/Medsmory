@@ -14,10 +14,14 @@ body {
 
 
 .btn {
-    width: 100px;
+    display: block;
+    width: fit-content;
     font-size: large;
-    padding: 5px;
-    border-radius: 5px;
+    font-weight: bolder;
+    margin: 1em auto auto;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 10px;
 }
 
 .btn:hover {
@@ -154,7 +158,6 @@ header img {
     font-size: 3rem;
     padding: 10px;
 }
-
 
 #result-box button {
     margin: 30px 30px;
