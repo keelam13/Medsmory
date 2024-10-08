@@ -2,14 +2,13 @@
 
 const questionElement = document.getElementById("question-element");
 const optionElement = document.getElementById("option-element");
+const confirmQuitBox = document.getElementById("quit-confirm")
+const overlay = document.getElementById("overlay");
 
 document.addEventListener("DOMContentLoaded", function() {
+
     document.getElementById("start-btn").addEventListener("click", showCategory);
-    document.getElementById("quit-btn").addEventListener("click", function() {
-        document.getElementById("quit-confirm").classList.remove("hide");
-        document.getElementById("overlay").classList.remove("hide");
-        quitConfirmation();
-    });
+    
 });
 
 let quizData, shuffledQuestion, currentQuestionIndex;
@@ -41,6 +40,12 @@ function chooseCategory(){
 function startQuiz() {
     document.getElementById("category-box").classList.add("hide");
     document.getElementById("quiz-box").classList.remove("hide");
+
+    document.getElementById("quit-btn").addEventListener("click", function() {
+        confirmQuitBox.classList.remove("hide");
+        overlay.classList.remove("hide");
+        quitConfirmation();
+    });
 
     let shuffleArray = (array) => {
         let shuffledData = array.slice().sort(() => Math.random() - 0.5);
