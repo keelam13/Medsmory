@@ -1,9 +1,14 @@
 /* jshint esversion: 6 */
 
+const homeDisplay = document.getElementById("home-display");
+const categoryBox = document.getElementById("category-box");
+const quizBox = document.getElementById("quiz-box");
 const questionElement = document.getElementById("question-element");
 const optionElement = document.getElementById("option-element");
 const confirmQuitBox = document.getElementById("quit-confirm")
 const overlay = document.getElementById("overlay");
+const alertBox = document.getElementById("alert-box");
+const resultBox = document.getElementById("result-box");
 
 document.addEventListener("DOMContentLoaded", function() {
 
@@ -16,8 +21,8 @@ let selectedAnswer, correctAnswer;
 let score, questionNum;
 
 function showCategory() {
-    document.getElementById("home-display").classList.add("hide");
-    document.getElementById("category-box").classList.remove("hide");
+    homeDisplay.classList.add("hide");
+    categoryBox.classList.remove("hide");
     chooseCategory();
 }
 function chooseCategory(){
@@ -38,8 +43,8 @@ function chooseCategory(){
 }
 
 function startQuiz() {
-    document.getElementById("category-box").classList.add("hide");
-    document.getElementById("quiz-box").classList.remove("hide");
+    categoryBox.classList.add("hide");
+    quizBox.classList.remove("hide");
 
     document.getElementById("quit-btn").addEventListener("click", function() {
         confirmQuitBox.classList.remove("hide");
@@ -87,7 +92,7 @@ function showQuestion() {
 function checkAnswer() {
     correctAnswer = shuffledQuestion[currentQuestionIndex].answer;
 
-    document.getElementById("overlay").classList.remove("hide");
+    overlay.classList.remove("hide");
        
     if (selectedAnswer === correctAnswer) {
         document.getElementById("wrong-icon").toggleAttribute("hide");
@@ -103,7 +108,8 @@ function checkAnswer() {
 
 function alertAnswer() {
     
-    document.getElementById("alert-box").classList.remove("hide");
+    alertBox.classList.remove("hide");
+
     document.getElementById("correct-answer").innerText = `
     Correct Answer: ${correctAnswer}`;
 
@@ -117,8 +123,8 @@ function nextQuestion() {
 
     console.log("OK");
     
-    document.getElementById("overlay").classList.add("hide");
-    document.getElementById("alert-box").classList.add("hide");
+    overlay.classList.add("hide");
+    alertBox.classList.add("hide");
     document.getElementById("wrong-icon").removeAttribute("hide");
     document.getElementById("correct-icon").removeAttribute("hide");
 
@@ -139,14 +145,14 @@ function quitConfirmation() {
     for (let i = 0; i < confirmBtns.length; i++) {
         confirmBtns[i].addEventListener("click", function () {
             if (confirmBtns[i].innerText === "Yes") {
-                document.getElementById("quit-confirm").classList.add("hide");
-                document.getElementById("overlay").classList.add("hide");
-                document.getElementById("quiz-box").classList.add("hide");
-                document.getElementById("home-display").classList.remove("hide");
+                quitConfirmation.classList.add("hide");
+                overlay.classList.add("hide");
+                quizBox.classList.add("hide");
+                homeDisplay.classList.remove("hide");
                 resetQuiz();
             } else if (confirmBtns[i].innerText === "No") {
-                document.getElementById("quit-confirm").classList.add("hide");
-                document.getElementById("overlay").classList.add("hide");
+                quitConfirmation.classList.add("hide");
+                overlay.classList.add("hide");
             }; 
         });
     }
@@ -174,20 +180,20 @@ function showQuizNum() {
 
 function showResult() {
     
-    document.getElementById("quiz-box").classList.add("hide");
-    document.getElementById("result-box").classList.remove("hide");
+    quizBox.classList.add("hide");
+    resultBox.classList.remove("hide");
 
     const resultBtns = document.querySelectorAll(".result-btn");
 
     for (let i = 0; i < resultBtns.length; i++) {
         resultBtns[i].addEventListener("click", function () {
             if (resultBtns[i].innerText === "Play again") {
-                document.getElementById("result-box").classList.add("hide");
+                resultBox.classList.add("hide");
                 resetQuiz();
                 startQuiz();
             } else if (resultBtns[i].innerText === "Exit game") {
-                document.getElementById("result-box").classList.add("hide");
-                document.getElementById("home-display").classList.remove("hide");
+                resultBox.classList.add("hide");
+                homeDisplay.classList.remove("hide");
                 resetQuiz();
             }; 
         });
