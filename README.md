@@ -128,6 +128,12 @@ Photo used for the site was taken from the web, which I included in the [Credits
 
 ![Browser result display](assets/images/result-desktop.png)
 
+### Workflow
+
+How the game works was planned usingthe this workflow made with [Miro](http.miro.com)
+
+![Medsmory Workflow](assets/images/medsmory-workflow.png)
+
 ## Features
 
 ### General features
