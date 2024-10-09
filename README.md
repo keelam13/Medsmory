@@ -1,9 +1,9 @@
 ![Medsmory](assets/images/logo.png)
 
 
-![Am I responsive?]()
+![Am I responsive?](assets/images/amiresponsive-medsmory.png)
 
-View the deployed site: [Know your meds](https://github.com/keelam13/know-your-meds)
+View the deployed site: [Know your meds](https://github.com/keelam13/Medsmory)
 
 Test your knowledge on medications commonly prescribed for different ailments. This quiz is inspired by the creator's desire to know what the differrent medications are for.
 
