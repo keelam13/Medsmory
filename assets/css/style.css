@@ -133,7 +133,7 @@ header {
 
 .quit-confirm-box {
     max-width: 400px;
-    margin: 12em auto auto;
+    margin: 5em auto auto;
     padding: 1em;
     background-color: #5bc0eb;
     border-radius: 10px;
@@ -155,7 +155,7 @@ header {
 .alert-box {
     max-width: 400px;
     max-height: 400px;
-    margin: 12em auto auto;
+    margin: 5em auto auto;
     text-align: center;
     background-color: #5bc0eb;
     padding: 30px;
