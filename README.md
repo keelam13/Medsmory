@@ -320,7 +320,15 @@ Please refer to the [TESTING.md](TESTING.md) file for all test-related documenta
 
 ### Content
 
-The inspiration for the content came from the increasing number of hikers and tourists alike who want to climb Mt. Pulag.  
+The content of the quiz, specifically the questions and drugs with their brand names are sourced fron different sites as fokkows:
+
+* [The European Medicines Agency](https://www.ema.europa.eu)
+* [Drugs.com](https://www.drugs.com/)
+* [Drug Bank](https://go.drugbank.com/)
+* [Mayo Clinic](https://www.mayoclinic.org/)
+* [Merck | Germany](https://www.sigmaaldrich.com/DE/de)
+* [Inxight Drugs](https://drugs.ncats.io/)
+* [Wikipedia](https://en.wikipedia.org) 
 
 ###  Media
 
