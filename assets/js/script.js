@@ -96,7 +96,7 @@ function checkAnswer() {
        
     if (selectedAnswer === correctAnswer) {
         document.getElementById("wrong-icon").toggleAttribute("hide");
-        addScore();
+        score++;
         alertAnswer();
     } else {
         document.getElementById("correct-icon").toggleAttribute("hide");
@@ -154,21 +154,13 @@ function quitConfirmation() {
                 quizBox.classList.add("hide");
                 homeDisplay.classList.remove("hide");
                 resetQuiz();
+                console.log("Yes!")
             } else if (confirmBtns[i].innerText === "No") {
                 quitConfirmDisplay.classList.add("hide");
+                console.log("No!")
             }; 
         });
     }
-}
-
-function addScore() {
-    score++;
-
-    let scoreDisplay = document.getElementById("total-score");
-    scoreDisplay.innerText = `${score} / ${quizData.length}`;
-
-    console.log("Score ", score);
-
 }
 
 function showQuizNum() {
@@ -186,6 +178,9 @@ function showResult() {
     quizBox.classList.add("hide");
     resultBox.classList.remove("hide");
 
+    let scoreDisplay = document.getElementById("total-score");
+    scoreDisplay.innerText = `${score} / ${quizData.length}`;
+
     const resultBtns = document.querySelectorAll(".result-btn");
 
     for (let i = 0; i < resultBtns.length; i++) {
@@ -194,10 +189,12 @@ function showResult() {
                 resultBox.classList.add("hide");
                 resetQuiz();
                 startQuiz();
+                console.log("Play again")
             } else if (resultBtns[i].innerText === "Exit game") {
                 resultBox.classList.add("hide");
                 homeDisplay.classList.remove("hide");
                 resetQuiz();
+                console.log("Exit game")
             }; 
         });
     }
@@ -208,6 +205,8 @@ function resetQuiz() {
     score = "";
     currentQuestionIndex = "";
     questionNum = "";
+
+    console.log("Game reset")
 
 }
 
