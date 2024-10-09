@@ -89,44 +89,44 @@ Photo used for the site was taken from the web, which I included in the [Credits
 #### Mobile devices
 * Home display
 
-![Mobile home page](assets/images/home-mobile.png)
+![Mobile home page](assets/images/wireframe-home-mobile.png)
 
 * Category display
 
-![Mobile category display](assets/images/category-mobile.png)
+![Mobile category display](assets/images/wireframe-category-mobile.png)
 
 * Quiz display
 
-![Mobile quiz display](assets/images/quiz-display-mobile.png)
+![Mobile quiz display](assets/images/wireframe-quiz-display-mobile.png)
 
 * Alert display
 
-![Mobile alert display](assets/images/alert-mobile.png)
+![Mobile alert display](assets/images/wireframe-alert-mobile.png)
 
 * Result display
 
-![Mobile result display](assets/images/result-mobile.png)
+![Mobile result display](assets/images/wireframe-result-mobile.png)
 
 #### Tablets & Desktops
 * Home display
 
-![Browser home page](assets/images/home-desktop.png)
+![Browser home page](assets/images/wireframe-home-desktop.png)
 
 * Category display
 
-![Browser category display](assets/images/category-desktop.png)
+![Browser category display](assets/images/wireframe-category-desktop.png)
 
 * Quiz display
 
-![Browser quiz page](assets/images/quiz-display-desktop.png)
+![Browser quiz page](assets/images/wireframe-quiz-display-desktop.png)
 
 * Alert display
 
-![Browser alert display](assets/images/alert-desktop.png)
+![Browser alert display](assets/images/wireframe-alert-desktop.png)
 
 * Result display
 
-![Browser result display](assets/images/result-desktop.png)
+![Browser result display](assets/images/wireframe-result-desktop.png)
 
 ### Workflow
 
@@ -159,6 +159,8 @@ This section contains the instruction on how to play and a "Start" button, which
 * Home section view on mobile devices
 
 ![Home mobile]()
+
+#### Category Display
 
 #### Quiz Display
 
