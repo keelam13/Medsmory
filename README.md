@@ -138,15 +138,15 @@ How the game works was planned usingthe this workflow made with [Miro](http.miro
 
 ### General features
 
-The website only has a single page which displays the different sections during navigation. These are the home display, quiz display, alert display and the result display. The site has a fixed background for consistency. The site is also responsive to a range of device screens.
+The website only has a single page which displays the different sections during navigation. These are the home display, category display, quiz display, alert display and the result display. Inside the page is also a section for confirmation when the player clicks the close/quit button. The site has a fixed background for consistency. The site is also responsive to a range of device screens.
 
 * The page has a favicon in the browser tab.
 
-![Tab Favicon]()
+![Tab Favicon](assets/images/favicon-on-tab.png)
 
-* The page displays every section with the site title and the hero image.
+* The page displays every section with the game logo.
 
-![Title]()
+![Title](assets/images/logo.png)
 
 #### Home Display
 
