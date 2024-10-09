@@ -154,13 +154,24 @@ This section contains the instruction on how to play and a "Start" button, which
 
 * Home section view on larger screens
 
-![Home browser]()
+![Home browser](assets/images/desktop-home.png)
 
 * Home section view on mobile devices
 
-![Home mobile]()
+![Home mobile](assets/images/mobile-home.png)
 
 #### Category Display
+
+Before taking the quiz, player will be asked to choose from 2 categories.
+
+* Category section view on larger screens
+
+![Home browser](assets/images/desktop-category.png)
+
+* Category section view on mobile devices
+
+![Home mobile](assets/images/mobile-category.png)
+
 
 #### Quiz Display
 
@@ -168,24 +179,44 @@ It displays the question number, the question and the buttons with options. Play
 
 * Quiz view on larger screens
 
-![Quiz Browser]()
+![Quiz Browser](assets/images/desktop-quiz.png)
 
 * Quiz view on mobile devices
 
-![Quiz mobile]()
+![Quiz mobile](assets/images/mobile-quiz.png)
+
+### Quit Confirmation Display
+
+Player will be asked to confirm if they really want to quit the game.
+
+* Quit confirmation view on larger screens
+
+![Quit confirmation Browser](assets/images/desktop-quit-confirm.png)
+
+* Quit confirmation view on mobile devices
+
+![Quit confirmation mobile](assets/images/mobile-quit-confirm.png)
 
 
 ### Alert Display
 
 The display is a way to tell the player whether the answer was correct or not. It will show a tick icon in color green, if the answer is correct, and otherwise it will show a x icon in red color. The box also contains an "OK" button to acknowledge the alert and move on to the next question.
 
-* Alert display view on larger devices
+* Alert display view for correct answer on larger devices
 
-![Alert display us browser]()
+![Alert display correct browser](assets/images/desktop-correct-alert.png)
 
-* Alert displayview on mobile devices
+* Alert display view for incorrect answer on larger devices
 
-![Alert display us mobile]()
+![Alert display incorrect browser](assets/images/desktop-incorrect-alert.png)
+
+* Alert display view for correct answer on mobile devices
+
+![Alert display correct mobile](assets/images/mobile-correct-alert.png)
+
+* Alert display view for incorrect answer on mobile devices
+
+![Alert display incorrect mobile](assets/images/mobile-incorrect-alert.png)
 
 ### Result Display
 
@@ -193,11 +224,11 @@ The game ends by showing how well the player did on the quiz. Each correct answe
 
 * Result Display view on larger screens
 
-![Result Display browser]()
+![Result Display browser](assets/images/desktop-result.png)
 
 * Result Display view on mobile devices
 
-![Result Display mobile]()
+![Result Display mobile](assets/images/mobile-result.png)
 
 
 ### Future Implementations
@@ -205,7 +236,7 @@ The game ends by showing how well the player did on the quiz. Each correct answe
 * Categorize the questions by specific drug class (eg. anti-hypertensives , anti-diabetics, etc). 
 * Add level of difficulty or more categories.
 * Allow players to save their scores and show high scores.
-* Improve quaity of commit messages and commit every after bit of changes.
+* Improve quality of commit messages and commit every after bit of changes.
 
 ### Accessibility
 
@@ -225,8 +256,7 @@ HTML, CSS and JavaScript were used to create this website.
 
 ### Other Technologies used
 
-* [Balsamiq](https://balsamiq.com/) - Used to create wireframes.
-* [Miro](https://miro.com) - Used to create the framework.
+* [Miro](https://miro.com) - Used to create the workflow.
 * [Git](https://git-scm.com/) - For version control.
 * [Github](https://github.com/) - To save and store the files for the website.
 * [Google Fonts](https://fonts.google.com/) - To import the fonts used on the website.
@@ -238,6 +268,7 @@ HTML, CSS and JavaScript were used to create this website.
 * [Am I Responsive?](https://ui.dev/amiresponsive) To show the website image on a range of devices.
 * [Coolors](https://coolors.co/) was used to create the color palette.
 * [Removebg](https://www.remove.bg/) was used to remove backgrounds from images.
+* [Figma](https://www.figma.com) was used to make the wireframes.
 
 ## Deployment & Local Development
 
