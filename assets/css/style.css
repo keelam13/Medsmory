@@ -19,6 +19,14 @@ body {
     display: none;
 }
 
+.overlay {
+    position:fixed;
+    top:0px;
+    left:0px;
+    bottom:0px;
+    right:0px;
+    background-color:rgba(0,0,0,0.5);
+}
 
 .btn {
     display: block;
@@ -123,16 +131,15 @@ header {
 
 /* Quit Confirmation box */
 
-.quit-confirmation {
+.quit-confirm-box {
     max-width: 400px;
-    margin: 20px auto auto;
+    margin: 12em auto auto;
     padding: 1em;
     background-color: #5bc0eb;
     border-radius: 10px;
     box-shadow: 10px 5px 5px #404e4d;
     text-align: center;
     position: relative;
-    z-index: 1;
 }
 
 .confirm-img {
@@ -156,15 +163,6 @@ header {
     box-shadow: 10px 5px 5px #404e4d;
     position: relative;
     z-index: 1;
-}
-
-#overlay {
-    position:absolute;
-    top:0px;
-    left:0px;
-    bottom:0px;
-    right:0px;
-    background-color:rgba(0,0,0,0.5);
 }
 
 #alert-box img[hide] {

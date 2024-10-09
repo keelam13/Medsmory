@@ -5,8 +5,7 @@ const categoryBox = document.getElementById("category-box");
 const quizBox = document.getElementById("quiz-box");
 const questionElement = document.getElementById("question-element");
 const optionElement = document.getElementById("option-element");
-const confirmQuitBox = document.getElementById("quit-confirm")
-const overlay = document.getElementById("overlay");
+const quitConfirmDisplay = document.getElementById("quit-confirm-display");
 const alertBox = document.getElementById("alert-box");
 const resultBox = document.getElementById("result-box");
 
@@ -47,8 +46,7 @@ function startQuiz() {
     quizBox.classList.remove("hide");
 
     document.getElementById("quit-btn").addEventListener("click", function() {
-        confirmQuitBox.classList.remove("hide");
-        overlay.classList.remove("hide");
+        quitConfirmDisplay.classList.remove("hide");
         quitConfirmation();
     });
 
@@ -85,14 +83,16 @@ function showQuestion() {
     
     showQuizNum();
     document.getElementById("submit-btn").addEventListener("click", checkAnswer);
-    
+    quizBox.addEventListener("keydown", function(e) {
+        if (e.key === "Enter") {
+            checkAnswer();
+        }
+    });
     console.log("Showing question!");
 }
 
 function checkAnswer() {
     correctAnswer = shuffledQuestion[currentQuestionIndex].answer;
-
-    overlay.classList.remove("hide");
        
     if (selectedAnswer === correctAnswer) {
         document.getElementById("wrong-icon").toggleAttribute("hide");
@@ -114,7 +114,13 @@ function alertAnswer() {
     Correct Answer: ${correctAnswer}`;
 
     document.getElementById("ok-btn").addEventListener("click", nextQuestion);
-   
+    document.getElementById("ok-btn").addEventListener("keydown", function(e) {
+        if (e.key === "Enter") {
+            quizBox.removeEventListener("keydown");
+            nextQuestion();
+        }
+    });
+
     console.log("Alert!");
 
 }
@@ -123,7 +129,6 @@ function nextQuestion() {
 
     console.log("OK");
     
-    overlay.classList.add("hide");
     alertBox.classList.add("hide");
     document.getElementById("wrong-icon").removeAttribute("hide");
     document.getElementById("correct-icon").removeAttribute("hide");
@@ -145,14 +150,12 @@ function quitConfirmation() {
     for (let i = 0; i < confirmBtns.length; i++) {
         confirmBtns[i].addEventListener("click", function () {
             if (confirmBtns[i].innerText === "Yes") {
-                confirmQuitBox.classList.add("hide");
-                overlay.classList.add("hide");
+                quitConfirmDisplay.classList.add("hide");
                 quizBox.classList.add("hide");
                 homeDisplay.classList.remove("hide");
                 resetQuiz();
             } else if (confirmBtns[i].innerText === "No") {
-                confirmQuitBox.classList.add("hide");
-                overlay.classList.add("hide");
+                quitConfirmDisplay.classList.add("hide");
             }; 
         });
     }
