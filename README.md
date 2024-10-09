@@ -1,4 +1,4 @@
-# Know your meds
+![Medsmory](assets/images/logo.png)
 
 
 ![Am I responsive?]()
