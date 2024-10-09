@@ -312,10 +312,11 @@ Please refer to the [TESTING.md](TESTING.md) file for all test-related documenta
 
 ### Code Used
 
-* [Image gallery with horizontal scroll]()
-* [Fading image]()
-* [Blink animation]()
-* [Refresh page metadata]()
+* [Simple Steps Code](https://simplestepscode.com/javascript-quiz-tutorial/), [Medium](https://medium.com/@codepicker57/building-an-interactive-quiz-with-html-css-and-javascript-efe9bd8129e2) and [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k) greatly inspired the building of this project.
+* [Overlay](https://stackoverflow.com/a/26409701)
+* [Detect which of two buttons is called](https://stackoverflow.com/a/47175277)
+
+
 
 
 ### Content
@@ -338,9 +339,6 @@ The images used in the site were taken from other sites.
 * [The check and x icons](https://www.freepik.com/)
 * [The ? pills](https://www.nationalelfservice.net/mental-health/depression/childhood-psychopathology-can-predict-antidepressant-use-in-young-adults/attachment/shutterstock_64158991-question-mark-pills-tablets/)
 * [The prescription pad and pill](https://www.flaticon.com/free-icon/prescription_4383660)
-
-
-
   
 ###  Acknowledgments
 
