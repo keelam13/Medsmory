@@ -89,53 +89,44 @@ Photo used for the site was taken from the web, which I included in the [Credits
 #### Mobile devices
 * Home display
 
-![Mobile home page]()
+![Mobile home page](assets/images/home-mobile.png)
+
+* Category display
+
+![Mobile category display](assets/images/category-mobile.png)
 
 * Quiz display
 
-![Mobile quiz display]()
+![Mobile quiz display](assets/images/quiz-display-mobile.png)
 
 * Alert display
 
-![Mobile alert display]()
+![Mobile alert display](assets/images/alert-mobile.png)
 
 * Result display
 
-![Mobile result display]()
+![Mobile result display](assets/images/result-mobile.png)
 
-#### Tablets
+#### Tablets & Desktops
 * Home display
 
-![Tablet home page]()
+![Browser home page](assets/images/home-desktop.png)
+
+* Category display
+
+![Browser category display](assets/images/category-desktop.png)
 
 * Quiz display
 
-![Tablet quiz page]()
+![Browser quiz page](assets/images/quiz-display-desktop.png)
 
 * Alert display
 
-![Tablet alert display]()
+![Browser alert display](assets/images/alert-desktop.png)
 
 * Result display
 
-![Tablet result display]()
-
-#### Desktop
-* Home display
-
-![Browser home page]()
-
-* Quiz display
-
-![Browser quiz page]()
-
-* Alert display
-
-![Browser alert display]()
-
-* Result display
-
-![Browser result display]()
+![Browser result display](assets/images/result-desktop.png)
 
 ## Features
 
