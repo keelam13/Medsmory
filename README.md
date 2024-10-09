@@ -320,7 +320,7 @@ Please refer to the [TESTING.md](TESTING.md) file for all test-related documenta
 
 ### Content
 
-The content of the quiz, specifically the questions and drugs with their brand names are sourced fron different sites as fokkows:
+The content of the quiz, specifically the questions and drugs with their brand names are sourced out from different sites as follows:
 
 * [The European Medicines Agency](https://www.ema.europa.eu)
 * [Drugs.com](https://www.drugs.com/)
@@ -332,7 +332,14 @@ The content of the quiz, specifically the questions and drugs with their brand n
 
 ###  Media
 
-Some of the images images used on the website are personal collection, and the other were taken from different bloggers who went to Mt. Pulag.
+The images used in the site were taken from other sites.
+
+* [The Medsmory Logo](https://www.design.com/)
+* [The check and x icons](https://www.freepik.com/)
+* [The ? pills](https://www.nationalelfservice.net/mental-health/depression/childhood-psychopathology-can-predict-antidepressant-use-in-young-adults/attachment/shutterstock_64158991-question-mark-pills-tablets/)
+* [The prescription pad and pill](https://www.flaticon.com/free-icon/prescription_4383660)
+
+
 
   
 ###  Acknowledgments
