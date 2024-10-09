@@ -352,3 +352,4 @@ The images used in the site were taken from other sites.
 - [Kera Cudmore](https://github.com/kera-cudmore) for the great help on constructing a README file.
 - [Code Institute](https://codeinstitute.net/) lessons, tutors and Slack community members for their support and help.
 - [Kevin Powell](https://www.youtube.com/user/KepowOb) for his amazing CSS tutorials.
+- [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k) for a great tutorial video on building a quiz with javascript.
