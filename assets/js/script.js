@@ -6,7 +6,7 @@ const quizBox = document.getElementById("quiz-box");
 const questionElement = document.getElementById("question-element");
 const optionElement = document.getElementById("option-element");
 const quitConfirmDisplay = document.getElementById("quit-confirm-display");
-const alertBox = document.getElementById("alert-box");
+const alertDisplay = document.getElementById("alert-display");
 const resultBox = document.getElementById("result-box");
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -108,7 +108,7 @@ function checkAnswer() {
 
 function alertAnswer() {
     
-    alertBox.classList.remove("hide");
+    alertDisplay.classList.remove("hide");
 
     document.getElementById("correct-answer").innerText = `
     Correct Answer: ${correctAnswer}`;
@@ -129,7 +129,7 @@ function nextQuestion() {
 
     console.log("OK");
     
-    alertBox.classList.add("hide");
+    alertDisplay.classList.add("hide");
     document.getElementById("wrong-icon").removeAttribute("hide");
     document.getElementById("correct-icon").removeAttribute("hide");
 

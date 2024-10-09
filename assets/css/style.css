@@ -152,24 +152,23 @@ header {
 
 /* Alert box */
 
-#alert-box {
+.alert-box {
     max-width: 400px;
     max-height: 400px;
-    margin: 20px auto auto;
+    margin: 12em auto auto;
     text-align: center;
     background-color: #5bc0eb;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 10px 5px 5px #404e4d;
     position: relative;
-    z-index: 1;
 }
 
-#alert-box img[hide] {
+.alert-box img[hide] {
     display: none;
 }
 
-#alert-box img {
+.alert-box img {
     width: 50%;
 }
 
