@@ -60,11 +60,7 @@ This multiple choice quiz will help players get familiarized with different kind
 * I want to easily navigate through the site.
 
 #### Returning Visitor Goals
-* 
-
-#### Frequent Visitor Goals
-* 
-
+* I want to be able to choose other category to play.
 
 ## Design
 
