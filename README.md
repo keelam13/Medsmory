@@ -22,8 +22,8 @@ This multiple choice quiz will help players get familiarized with different kind
   * [Colour Scheme](#colour-scheme)
   * [Typography](#typography)
   * [Imagery](#imagery)
-
   * [Wireframes](#wireframes)
+  * [Workflow](#workflow)
 
 * [Features](#features)
   * [General Features on Each Page](#general-features-on-each-page)
