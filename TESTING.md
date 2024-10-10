@@ -10,15 +10,15 @@ The webpage was built using Chrome browser, but in order to confirm the correct 
 
     - Chrome:
 
-    ![Edge]()
+    ![Edge](documentation/browser-edge-test-ezgif.com-optimize.gif)
 
     - FireFox
 
-    ![FireFox]()
+    ![FireFox](documentation/browser-firefox-test-ezgif.com-optimize.gif)
 
     - Brave:
 
-    ![Brave]()
+    ![Brave](documentation/browser-brave-test-ezgif.com-optimize.gif)
 
 ## Responsiveness
 
@@ -91,3 +91,4 @@ Aside from testing the website of its responsiveness using the dev tools, the [A
     - 
 
 ---
+  
