@@ -36,7 +36,7 @@ function chooseCategory(){
             } else if (categoryBtns[i].id === "category-two") {
                 quizData = brandName;
                 startQuiz();
-            }; 
+            }
         });
     }
 }
@@ -157,8 +157,8 @@ function quitConfirmation() {
                 console.log("Yes!");
             } else if (confirmBtns[i].innerText === "No") {
                 quitConfirmDisplay.classList.add("hide");
-                console.log("No!")
-            }; 
+                console.log("No!");
+            }
         });
     }
 }
@@ -189,13 +189,13 @@ function showResult() {
                 resultBox.classList.add("hide");
                 resetQuiz();
                 startQuiz();
-                console.log("Play again")
+                console.log("Play again");
             } else if (resultBtns[i].innerText === "Exit game") {
                 resultBox.classList.add("hide");
                 homeDisplay.classList.remove("hide");
                 resetQuiz();
-                console.log("Exit game")
-            }; 
+                console.log("Exit game");
+            }
         });
     }
 }
@@ -206,7 +206,7 @@ function resetQuiz() {
     currentQuestionIndex = "";
     questionNum = "";
 
-    console.log("Game reset")
+    console.log("Game reset");
 
 }
 
