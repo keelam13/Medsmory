@@ -1,7 +1,7 @@
 ![Medsmory](assets/images/logo.png)
 
 
-![Am I responsive?](assets/images/amiresponsive-medsmory.png)
+![Am I responsive?](documentation/amiresponsive-medsmory.png)
 
 View the deployed site: [Know your meds](https://github.com/keelam13/Medsmory)
 
@@ -66,7 +66,7 @@ This multiple choice quiz will help players get familiarized with different kind
 
 ### Colour Scheme
 
-![Color pallete](assets/images/color-palette.webp)
+![Color pallete](documentation/color-palette.webp)
 The color palette was generated through the Coolors website.
 * The color #f5b700 was used as the main background.
 * The color #5bc0eb was used as the backgrounf of the alert box.
@@ -77,7 +77,7 @@ The color palette was generated through the Coolors website.
 
 Font used for this site was imported from [Google Fonts](https://fonts.google.com/).
 
-![Font Sora](assets/images/google-fonts.webp)
+![Font Sora](documentation/google-fonts.webp)
 * Sora Google font was used as the primary font for the site for content readability.
   
 ### Imagery
@@ -89,50 +89,50 @@ Photo used for the site was taken from the web, which I included in the [Credits
 #### Mobile devices
 * Home display
 
-![Mobile home page](assets/images/wireframe-home-mobile.png)
+![Mobile home page](documentation/wireframe-home-mobile.png)
 
 * Category display
 
-![Mobile category display](assets/images/wireframe-category-mobile.png)
+![Mobile category display](documentation/wireframe-category-mobile.png)
 
 * Quiz display
 
-![Mobile quiz display](assets/images/wireframe-quiz-display-mobile.png)
+![Mobile quiz display](documentation/wireframe-quiz-display-mobile.png)
 
 * Alert display
 
-![Mobile alert display](assets/images/wireframe-alert-mobile.png)
+![Mobile alert display](documentation/wireframe-alert-mobile.png)
 
 * Result display
 
-![Mobile result display](assets/images/wireframe-result-mobile.png)
+![Mobile result display](documentation/wireframe-result-mobile.png)
 
 #### Tablets & Desktops
 * Home display
 
-![Browser home page](assets/images/wireframe-home-desktop.png)
+![Browser home page](documentation/wireframe-home-desktop.png)
 
 * Category display
 
-![Browser category display](assets/images/wireframe-category-desktop.png)
+![Browser category display](documentation/wireframe-category-desktop.png)
 
 * Quiz display
 
-![Browser quiz page](assets/images/wireframe-quiz-display-desktop.png)
+![Browser quiz page](documentation/wireframe-quiz-display-desktop.png)
 
 * Alert display
 
-![Browser alert display](assets/images/wireframe-alert-desktop.png)
+![Browser alert display](documentation/wireframe-alert-desktop.png)
 
 * Result display
 
-![Browser result display](assets/images/wireframe-result-desktop.png)
+![Browser result display](documentation/wireframe-result-desktop.png)
 
 ### Workflow
 
 How the game works was planned usingthe this workflow made with [Miro](http.miro.com)
 
-![Medsmory Workflow](assets/images/medsmory-workflow.png)
+![Medsmory Workflow](documentation/medsmory-workflow.png)
 
 ## Features
 
@@ -142,7 +142,7 @@ The website only has a single page which displays the different sections during 
 
 * The page has a favicon in the browser tab.
 
-![Tab Favicon](assets/images/favicon-on-tab.png)
+![Tab Favicon](documentation/favicon-on-tab.png)
 
 * The page displays every section with the game logo.
 
@@ -154,11 +154,11 @@ This section contains the instruction on how to play and a "Start" button, which
 
 * Home section view on larger screens
 
-![Home browser](assets/images/desktop-home.png)
+![Home browser](documentation/desktop-home.png)
 
 * Home section view on mobile devices
 
-![Home mobile](assets/images/mobile-home.png)
+![Home mobile](documentation/mobile-home.png)
 
 #### Category Display
 
@@ -166,11 +166,11 @@ Before taking the quiz, player will be asked to choose from 2 categories.
 
 * Category section view on larger screens
 
-![Home browser](assets/images/desktop-category.png)
+![Home browser](documentation/desktop-category.png)
 
 * Category section view on mobile devices
 
-![Home mobile](assets/images/mobile-category.png)
+![Home mobile](documentation/mobile-category.png)
 
 
 #### Quiz Display
@@ -179,11 +179,11 @@ It displays the question number, the question and the buttons with options. Play
 
 * Quiz view on larger screens
 
-![Quiz Browser](assets/images/desktop-quiz.png)
+![Quiz Browser](documentation/desktop-quiz.png)
 
 * Quiz view on mobile devices
 
-![Quiz mobile](assets/images/mobile-quiz.png)
+![Quiz mobile](documentation/mobile-quiz.png)
 
 ### Quit Confirmation Display
 
@@ -191,11 +191,11 @@ Player will be asked to confirm if they really want to quit the game.
 
 * Quit confirmation view on larger screens
 
-![Quit confirmation Browser](assets/images/desktop-quit-confirm.png)
+![Quit confirmation Browser](documentation/desktop-quit-confirm.png)
 
 * Quit confirmation view on mobile devices
 
-![Quit confirmation mobile](assets/images/mobile-quit-confirm.png)
+![Quit confirmation mobile](documentation/mobile-quit-confirm.png)
 
 
 ### Alert Display
@@ -204,19 +204,19 @@ The display is a way to tell the player whether the answer was correct or not. I
 
 * Alert display view for correct answer on larger devices
 
-![Alert display correct browser](assets/images/desktop-correct-alert.png)
+![Alert display correct browser](documentation/desktop-correct-alert.png)
 
 * Alert display view for incorrect answer on larger devices
 
-![Alert display incorrect browser](assets/images/desktop-incorrect-alert.png)
+![Alert display incorrect browser](documentation/desktop-incorrect-alert.png)
 
 * Alert display view for correct answer on mobile devices
 
-![Alert display correct mobile](assets/images/mobile-correct-alert.png)
+![Alert display correct mobile](documentation/mobile-correct-alert.png)
 
 * Alert display view for incorrect answer on mobile devices
 
-![Alert display incorrect mobile](assets/images/mobile-incorrect-alert.png)
+![Alert display incorrect mobile](documentation/mobile-incorrect-alert.png)
 
 ### Result Display
 
@@ -224,11 +224,11 @@ The game ends by showing how well the player did on the quiz. Each correct answe
 
 * Result Display view on larger screens
 
-![Result Display browser](assets/images/desktop-result.png)
+![Result Display browser](documentation/desktop-result.png)
 
 * Result Display view on mobile devices
 
-![Result Display mobile](assets/images/mobile-result.png)
+![Result Display mobile](documentation/mobile-result.png)
 
 
 ### Future Implementations
