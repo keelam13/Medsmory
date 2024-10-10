@@ -24,7 +24,7 @@ The webpage was built using Chrome browser, but in order to confirm the correct 
 
 Aside from testing the website of its responsiveness using the dev tools, the [Am I responsive?](https://ui.dev/amiresponsive) was also used to check how the website respond on different screen sizes.
 
-![Am I Responsive?]()
+![Am I Responsive?](documentation/amiresponsive-medsmory.png)
 
 ## Manual testing
 
