@@ -46,7 +46,7 @@ This multiple choice quiz will help players get familiarized with different kind
   * [Code Used](#code-used)
   * [Content](#content)
   * [Media](#media)
-  * [Acknowledgments](#acknowledgments)
+  * [Acknowledgments](#acknowledgements)
 
 ---
 
@@ -340,7 +340,7 @@ The images used in the site were taken from other sites.
 * [The ? pills](https://www.nationalelfservice.net/mental-health/depression/childhood-psychopathology-can-predict-antidepressant-use-in-young-adults/attachment/shutterstock_64158991-question-mark-pills-tablets/)
 * [The prescription pad and pill](https://www.flaticon.com/free-icon/prescription_4383660)
   
-###  Acknowledgments
+###  Acknowledgements
 
 - The Almighty for the opportunity to do coding.
 - My family for their unending support.
@@ -351,3 +351,4 @@ The images used in the site were taken from other sites.
 - [Code Institute](https://codeinstitute.net/) lessons, tutors and Slack community members for their support and help.
 - [Kevin Powell](https://www.youtube.com/user/KepowOb) for his amazing CSS tutorials.
 - [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k) for a great tutorial video on building a quiz with javascript.
+- [Slack overflow](https://stackoverflow.com/) and [MDN Web Docs](https://developer.mozilla.org/en-US/) for being my run-to references when I have questions. 
