@@ -199,6 +199,7 @@ The game ends by showing how well the player did on the quiz. Each correct answe
 * Categorize the questions by specific drug class (eg. anti-hypertensives , anti-diabetics, etc). 
 * Add level of difficulty or more categories.
 * Allow players to save their scores and show high scores.
+* Functionality of keyboard in the quiz, like keydown listeners.
 * Improve quality of commit messages and commit every after bit of changes.
 
 ### Accessibility
