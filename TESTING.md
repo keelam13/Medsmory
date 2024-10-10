@@ -93,11 +93,11 @@ Aside from testing the website of its responsiveness using the dev tools, the [A
 
     - Home page on desktop 
 
-  ![Home Page Desktop Lighthouse](documentation/lighthouse_home_desk.png)
+  ![Home Page Desktop Lighthouse](documentation/lighthouse-browser-test.png)
 
     - Home page on mobile
 
-  ![Home Page Mobile Lighthouse](documentation/lighthouse_home_mob.png)
+  ![Home Page Mobile Lighthouse](documentation/lighthouse-mobile-test.png)
 
 ---
 ​
