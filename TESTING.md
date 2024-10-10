@@ -105,7 +105,14 @@ Aside from testing the website of its responsiveness using the dev tools, the [A
 
 + ### Solved bugs
 
-    1. 
+    1. The overlay was not covering the whole screen when an alert or confirmation pops up, and the buttons on the background can be clicked and cause error.
+      *Solution:* The position style of the ovarlay was set to fixed.
+
+    2. The displayed score does not reset to zero.
+      *Solution:* The function to increase the scrore and to display score in the result page was removed and the two were separated. The score increment code was placed under the if function and the display of score under the show result function.
+
+    3. The Favicon does not appear on the browser tab.
+      *Solution:* The forward slash which was accidentally typed before the filepath of the Favicon was deleted. 
 
 + ### Unsolved bugs
 
@@ -113,6 +120,7 @@ Aside from testing the website of its responsiveness using the dev tools, the [A
 
 + ### Mistakes
     - 
+
 
 ---
   
