@@ -316,9 +316,6 @@ Please refer to the [TESTING.md](TESTING.md) file for all test-related documenta
 * [Overlay](https://stackoverflow.com/a/26409701)
 * [Detect which of two buttons is called](https://stackoverflow.com/a/47175277)
 
-
-
-
 ### Content
 
 The content of the quiz, specifically the questions and drugs with their brand names are sourced out from different sites as follows:

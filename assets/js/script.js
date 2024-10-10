@@ -19,11 +19,14 @@ let quizData, shuffledQuestion, currentQuestionIndex;
 let selectedAnswer, correctAnswer;
 let score, questionNum;
 
+// This will display the categories
 function showCategory() {
     homeDisplay.classList.add("hide");
     categoryBox.classList.remove("hide");
     chooseCategory();
 }
+
+// This will allow user to choose the category
 function chooseCategory(){
 
     const categoryBtns = document.querySelectorAll(".category-btn");
@@ -41,6 +44,7 @@ function chooseCategory(){
     }
 }
 
+// This will shuffle the questions based on the category selected.
 function startQuiz() {
     categoryBox.classList.add("hide");
     quizBox.classList.remove("hide");
@@ -64,6 +68,7 @@ function startQuiz() {
     console.log("Started game!");
 }
 
+// This will display the question together with the shuffled options.
 function showQuestion() {
     
     let options = shuffledQuestion[currentQuestionIndex].options.sort(() => Math.random() - 0.5);
@@ -82,7 +87,10 @@ function showQuestion() {
     });
     
     showQuizNum();
+
+    // Event listener will submit selected answer by clicking the button pressing the enter key.
     document.getElementById("submit-btn").addEventListener("click", checkAnswer);
+    
     quizBox.addEventListener("keydown", function(e) {
         if (e.key === "Enter") {
             checkAnswer();
@@ -91,11 +99,14 @@ function showQuestion() {
     console.log("Showing question!");
 }
 
+// This will check the selected answer.
 function checkAnswer() {
     correctAnswer = shuffledQuestion[currentQuestionIndex].answer;
        
     if (selectedAnswer === correctAnswer) {
         document.getElementById("wrong-icon").toggleAttribute("hide");
+        
+        // Adds a score to every correct answer
         score++;
         alertAnswer();
     } else {
@@ -106,6 +117,7 @@ function checkAnswer() {
     console.log("Submitted!", "Checked!");
 }
 
+// This will alert the user  whether the selected answer is correct or not.
 function alertAnswer() {
     
     alertDisplay.classList.remove("hide");
@@ -113,8 +125,16 @@ function alertAnswer() {
     document.getElementById("correct-answer").innerText = `
     Correct Answer: ${correctAnswer}`;
 
+    // Button will lead to the next question.
     document.getElementById("ok-btn").addEventListener("click", nextQuestion);
-    document.getElementById("ok-btn").addEventListener("keydown", function(e) {
+
+    quizBox.removeEventListener("keydown", function(e) {
+        if (e.key === "Enter") {
+            null;
+        }
+    });
+    
+    alertDisplay.addEventListener("keydown", function(e) {
         if (e.key === "Enter") {
             quizBox.removeEventListener("keydown");
             nextQuestion();
@@ -125,6 +145,7 @@ function alertAnswer() {
 
 }
 
+// This will decide whether to display the next question or the result.
 function nextQuestion() {
 
     console.log("OK");
@@ -144,6 +165,7 @@ function nextQuestion() {
 
 }
 
+// This will allow user to confirm to quit or not.
 function quitConfirmation() {
     const confirmBtns = document.querySelectorAll(".confirm-btn");
 
@@ -163,6 +185,7 @@ function quitConfirmation() {
     }
 }
 
+// This increases the question number.
 function showQuizNum() {
     questionNum++;
 
@@ -173,6 +196,7 @@ function showQuizNum() {
 
 }
 
+// This shows the result.
 function showResult() {
     
     quizBox.classList.add("hide");
@@ -181,6 +205,7 @@ function showResult() {
     let scoreDisplay = document.getElementById("total-score");
     scoreDisplay.innerText = `${score} / ${quizData.length}`;
 
+    // This allows user to choose to play again or to exit the game.
     const resultBtns = document.querySelectorAll(".result-btn");
 
     for (let i = 0; i < resultBtns.length; i++) {
@@ -200,6 +225,7 @@ function showResult() {
     }
 }
 
+// This resets everything to default.
 function resetQuiz() {
     
     score = "";
@@ -210,6 +236,7 @@ function resetQuiz() {
 
 }
 
+// These is a set of questions for a quiz category.
 const nameDrug = [
     {
         question: "This drug blocks the action of a protein in the kidneys called sodium-glucose co-transporter 2 (SGLT2), which stops the kidneys passing glucose from the blood into the urine. Thereby causing the kidneys to pass more glucose into the urine and reducing the glucose level in the blood. It also increases the elimination of salt and water in the urine.", 
@@ -314,6 +341,7 @@ const nameDrug = [
     },
 ]; */
 
+// These another set of questions for a quiz category.
 const brandName = [
     {
         question: "Tocilizumab",
