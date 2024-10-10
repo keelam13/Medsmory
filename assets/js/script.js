@@ -157,7 +157,7 @@ function quitConfirmation() {
                 quitConfirmDisplay.classList.add("hide");
                 quizBox.classList.add("hide");
                 homeDisplay.classList.remove("hide");
-                resetQuiz();
+                reloadPage();
                 console.log("Yes!");
             } else if (confirmBtns[i].innerText === "No") {
                 quitConfirmDisplay.classList.add("hide");
@@ -194,13 +194,13 @@ function showResult() {
         resultBtns[i].addEventListener("click", function () {
             if (resultBtns[i].innerText === "Play again") {
                 resultBox.classList.add("hide");
-                resetQuiz();
+                // resetQuiz();
                 startQuiz();
                 console.log("Play again");
             } else if (resultBtns[i].innerText === "Exit game") {
                 resultBox.classList.add("hide");
                 homeDisplay.classList.remove("hide");
-                resetQuiz();
+                reloadPage();
                 console.log("Exit game");
             }
         });
@@ -208,11 +208,9 @@ function showResult() {
 }
 
 // This resets everything to default.
-function resetQuiz() {
+function reloadPage() {
     
-    score = "";
-    currentQuestionIndex = "";
-    questionNum = "";
+   window.location.reload();
 
     console.log("Game reset");
 
