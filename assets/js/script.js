@@ -226,7 +226,7 @@ function showResult() {
  * This will reload the page and bring user back to home page.
  */
 function reloadPage() {
-        
+
    window.location.reload();
 }
 
@@ -247,8 +247,7 @@ const nameDrug = [
         options:["Melperone (Bunil)","Apixaban (Eliquis)","Amiodarone (Cordarex)"],
         answer:"Melperone (Bunil)"
     },
-];
-/*    {
+    {
         question:"It is a calcium channel blocker which inhibits the contractile processes of the myocardial smooth muscle cells, causing dilation of the coronary and systemic arteries, increased oxygen delivery to the myocardial tissue, decreased total peripheral resistance, decreased systemic blood pressure, and decreased afterload.",
         options:["Lercanidipin (Zanidip)","Safinamide (Xadago)","Ondansetron (Zofran)"],
         answer:"Lercanidipin (Zanidip)"
@@ -333,7 +332,7 @@ const nameDrug = [
         options:["Tocilizumab (Actemra)","Piritramide (Dipidolor)","Safinamide (Xadago)"],
         answer:"Tocilizumab (Actemra)"
     },
-]; */
+];
 
 // These another set of questions for a quiz category.
 const brandName = [
@@ -352,7 +351,7 @@ const brandName = [
         options: ["Okrido", "Bunil", "Zanidip"],
         answer: "Okrido"
     },
-/*    {
+    {
         question: "Melperone",
         options: ["Bunil", "Zanidip", "Lexapro"],
         answer: "Bunil"
@@ -436,5 +435,5 @@ const brandName = [
         question: "Insulin lispro",
         options: ["Humalog", "Actemra", "Forxiga"],
         answer: "Humalog"
-    } */
+    }
 ];
