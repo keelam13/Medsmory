@@ -9,8 +9,10 @@ const quitConfirmDisplay = document.getElementById("quit-confirm-display");
 const alertDisplay = document.getElementById("alert-display");
 const resultBox = document.getElementById("result-box");
 
+// Waits for the DOM to finish loading before running the game
 document.addEventListener("DOMContentLoaded", function() {
 
+    // Initiates the game
     document.getElementById("start-btn").addEventListener("click", showCategory);
     
 });
@@ -56,11 +58,13 @@ function startQuiz() {
     categoryBox.classList.add("hide");
     quizBox.classList.remove("hide");
 
+    // This allows the user to quit / close during the quiz 
     document.getElementById("quit-btn").addEventListener("click", function() {
         quitConfirmDisplay.classList.remove("hide");
         quitConfirmation();
     });
 
+    // Shuffles the questions
     let shuffleArray = (array) => {
         let shuffledData = array.slice().sort(() => Math.random() - 0.5);
         return shuffledData;
@@ -72,7 +76,6 @@ function startQuiz() {
     shuffledQuestion = shuffleArray(quizData);
     
     showQuestion();
-    console.log("Started game!");
 }
 
 /**
@@ -81,16 +84,19 @@ function startQuiz() {
  */
 function showQuestion() {
     
+    // Shuffles the options
     let options = shuffledQuestion[currentQuestionIndex].options.sort(() => Math.random() - 0.5);
     
     questionElement.textContent = shuffledQuestion[currentQuestionIndex].question;
 
+    // Creates buttons for the options
     optionElement.innerHTML = "";
     options.forEach(option => {
       const optionBtn = document.createElement("button");
       optionBtn.innerText = option;
       optionBtn.classList.add("option-btn");
       optionElement.appendChild(optionBtn);
+      
       // Declares the selected answer
       optionBtn.addEventListener("click", function(e) {
             selectedAnswer = e.target.innerText;
@@ -101,8 +107,6 @@ function showQuestion() {
 
     // Event listener will submit selected answer by clicking the button pressing the enter key.
     document.getElementById("submit-btn").addEventListener("click", checkAnswer);
-       
-    console.log("Showing question!");
 }
 
 /**
@@ -121,8 +125,6 @@ function checkAnswer() {
         document.getElementById("correct-icon").toggleAttribute("hide");
         alertAnswer();
     }
-
-    console.log("Submitted!", "Checked!");
 }
 
 /**
@@ -138,32 +140,26 @@ function alertAnswer() {
 
     // Button will lead to the next question.
     document.getElementById("ok-btn").addEventListener("click", nextQuestion);
-
-    console.log("Alert!");
-
 }
 
 /**
- * This will takes user to the next question if there are more questions, or
+ * This will take user to the next question if there are more questions, or
  *  display the result if there are not any more questions.
  */
 function nextQuestion() {
-
-    console.log("OK");
     
     alertDisplay.classList.add("hide");
     document.getElementById("wrong-icon").removeAttribute("hide");
     document.getElementById("correct-icon").removeAttribute("hide");
 
     if (shuffledQuestion.length > currentQuestionIndex + 1) {
+        
+            // Increases current question index
             currentQuestionIndex++;
-            console.log("Next question");
             showQuestion();
         } else {
-        showResult();
-        console.log("Showing result");
+            showResult();
         }
-
 }
 
 /**
@@ -179,10 +175,8 @@ function quitConfirmation() {
                 quizBox.classList.add("hide");
                 homeDisplay.classList.remove("hide");
                 reloadPage();
-                console.log("Yes!");
             } else {
                 quitConfirmDisplay.classList.add("hide");
-                console.log("No!");
             }
         });
     }
@@ -192,13 +186,12 @@ function quitConfirmation() {
  * This increases the question number displayed in the quiz.
  */
 function showQuizNum() {
+
+    // Increases the question number
     questionNum++;
 
     let quizNum = document.getElementById("quiz-num");
     quizNum.innerText = `Question ${questionNum} / ${quizData.length}`;
-
-    console.log("Question ", questionNum);
-
 }
 
 /**
@@ -220,12 +213,10 @@ function showResult() {
             if (resultBtns[i].innerText === "Play again") {
                 resultBox.classList.add("hide");
                 startQuiz();
-                console.log("Play again");
             } else if (resultBtns[i].innerText === "Exit game") {
                 resultBox.classList.add("hide");
                 homeDisplay.classList.remove("hide");
                 reloadPage();
-                console.log("Exit game");
             }
         });
     }
@@ -235,11 +226,8 @@ function showResult() {
  * This will reload the page and bring user back to home page.
  */
 function reloadPage() {
-    
+        
    window.location.reload();
-
-    console.log("Game reset");
-
 }
 
 // This is a set of questions for a quiz category.
