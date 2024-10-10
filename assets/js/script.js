@@ -19,14 +19,18 @@ let quizData, shuffledQuestion, currentQuestionIndex;
 let selectedAnswer, correctAnswer;
 let score, questionNum;
 
-// This will display the categories
+/**
+ * This shows the categories to choose from.
+ */ 
 function showCategory() {
     homeDisplay.classList.add("hide");
     categoryBox.classList.remove("hide");
     chooseCategory();
 }
 
-// This will allow user to choose the category
+/**
+ * This will allow user to choose the category by clicking the buttons
+ */
 function chooseCategory(){
 
     const categoryBtns = document.querySelectorAll(".category-btn");
@@ -44,7 +48,10 @@ function chooseCategory(){
     }
 }
 
-// This will shuffle the questions based on the category selected.
+/**
+ * This will shuffle the questions based on the category selected.
+ * The current question index, the score and the question number will also be declared. 
+ */
 function startQuiz() {
     categoryBox.classList.add("hide");
     quizBox.classList.remove("hide");
@@ -68,7 +75,10 @@ function startQuiz() {
     console.log("Started game!");
 }
 
-// This will display the question together with the shuffled options.
+/**
+ * This will display the question together with the shuffled options.
+ * It also shuffles the answer options for the question and creates a button for eac to be displayed.
+ */
 function showQuestion() {
     
     let options = shuffledQuestion[currentQuestionIndex].options.sort(() => Math.random() - 0.5);
@@ -81,6 +91,7 @@ function showQuestion() {
       optionBtn.innerText = option;
       optionBtn.classList.add("option-btn");
       optionElement.appendChild(optionBtn);
+      // Declares the selected answer
       optionBtn.addEventListener("click", function(e) {
             selectedAnswer = e.target.innerText;
       });
@@ -94,7 +105,9 @@ function showQuestion() {
     console.log("Showing question!");
 }
 
-// This will check the selected answer.
+/**
+ * This will check the selected answer if it'S correct or not.
+ */
 function checkAnswer() {
     correctAnswer = shuffledQuestion[currentQuestionIndex].answer;
        
@@ -112,7 +125,10 @@ function checkAnswer() {
     console.log("Submitted!", "Checked!");
 }
 
-// This will alert the user  whether the selected answer is correct or not.
+/**
+ * This will alert the user  whether the selected answer is correct or not.
+ * It also shows the user the correct answer to the question.
+ */
 function alertAnswer() {
     
     alertDisplay.classList.remove("hide");
@@ -127,7 +143,10 @@ function alertAnswer() {
 
 }
 
-// This will decide whether to display the next question or the result.
+/**
+ * This will takes user to the next question if there are more questions, or
+ *  display the result if there are not any more questions.
+ */
 function nextQuestion() {
 
     console.log("OK");
@@ -147,7 +166,9 @@ function nextQuestion() {
 
 }
 
-// This will allow user to confirm to quit or not.
+/**
+ * This will allow user to confirm to quit or continue on with the quiz.
+ */
 function quitConfirmation() {
     const confirmBtns = document.querySelectorAll(".confirm-btn");
 
@@ -167,7 +188,9 @@ function quitConfirmation() {
     }
 }
 
-// This increases the question number.
+/**
+ * This increases the question number displayed in the quiz.
+ */
 function showQuizNum() {
     questionNum++;
 
@@ -178,7 +201,9 @@ function showQuizNum() {
 
 }
 
-// This shows the result.
+/**
+ * This shows the score of the player after finishing the quiz.
+ */
 function showResult() {
     
     quizBox.classList.add("hide");
@@ -194,7 +219,6 @@ function showResult() {
         resultBtns[i].addEventListener("click", function () {
             if (resultBtns[i].innerText === "Play again") {
                 resultBox.classList.add("hide");
-                // resetQuiz();
                 startQuiz();
                 console.log("Play again");
             } else if (resultBtns[i].innerText === "Exit game") {
@@ -207,7 +231,9 @@ function showResult() {
     }
 }
 
-// This resets everything to default.
+/**
+ * This will reload the page and bring user back to home page.
+ */
 function reloadPage() {
     
    window.location.reload();
@@ -216,7 +242,7 @@ function reloadPage() {
 
 }
 
-// These is a set of questions for a quiz category.
+// This is a set of questions for a quiz category.
 const nameDrug = [
     {
         question: "This drug blocks the action of a protein in the kidneys called sodium-glucose co-transporter 2 (SGLT2), which stops the kidneys passing glucose from the blood into the urine. Thereby causing the kidneys to pass more glucose into the urine and reducing the glucose level in the blood. It also increases the elimination of salt and water in the urine.", 
