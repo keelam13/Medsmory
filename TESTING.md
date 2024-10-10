@@ -54,10 +54,17 @@ Aside from testing the website of its responsiveness using the dev tools, the [A
 ## Testing User Stories
 
 * First Time Visitors
-  
- 
+  * I want to take part of the quiz and improve my knowledge on medications.
+    - The quiz contents are specifically about medications and are pulled from reliable  sources and are based on studies. This quiz is available to users whenever, whereever.
+  * I want to ba able to take the quiz on different device screen-sizes.
+    - The quiz is built to respond to a wide range of device screen sizes.
+  * I want to easily navigate through the site.
+    - The quiz uses buttons all thoughout for easy navigation.
+
 * Returning Visitors
-  
+  * I want to be able to choose other category to play.
+    - Users are able to select from 2 categories.
+
 ---
 
 ## Validator testing
