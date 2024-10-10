@@ -30,8 +30,25 @@ Aside from testing the website of its responsiveness using the dev tools, the [A
 
 + The functionality of the links in the website was checked as well by different users.
 
-| feature | action | expected result | tested | passed | comments |
+| Feature | Action | Expected Result | Tested | Passed | Comments |
 | --- | --- | --- | --- | --- | --- |
+| Home Page | | | | | |
+| Start Button | Click on the button | The user is redirected to choose category. | Yes | Yes | - |
+| Category Display | | | | | |
+| Name the drug category Button| Click on the button | The quiz describing a drug which will be identified will be displayed. | Yes | Yes | - |
+| Brand names category Button | Click on the button | The quiz showing drugs to be identified which of the brand names will be displayed. | Yes | Yes | - |
+| Quiz Display | | | | | |
+| Close/Quit Button | Click on the button | The user will be asked to confirm quiting the game. | Yes | Yes | - |
+| Options Buttons | Click on a button | The answer will be selected | Yes | Yes | - |
+| Submit Button | Click on the button | The selected answer will check the answer if it is correct or not and will alert the user. | Yes | Yes | - |
+| Alert Display | | | | | |
+| OK Button | Click on the button | The user is redirected to the quiz if there are more questions. If not the user will be redirected to the result page. | Yes | Yes | - |
+| Result Display | | | | | |
+| Play again Button | Click on the button | The user will be redirected to a new quiz. | Yes | Yes | - |
+| Exit game Button | Click on the button | The user will be redirected to the home page. | Yes | Yes | - |
+| Confirm Display | | | | | |
+| Yes Button | Click on the button | The user is redirected to the home page | Yes | Yes | - |
+| No Button | Click on the button | The user is redirected back to the quiz. | Yes | Yes | - |
 
 
 ## Testing User Stories
