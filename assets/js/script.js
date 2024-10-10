@@ -90,12 +90,7 @@ function showQuestion() {
 
     // Event listener will submit selected answer by clicking the button pressing the enter key.
     document.getElementById("submit-btn").addEventListener("click", checkAnswer);
-    
-    quizBox.addEventListener("keydown", function(e) {
-        if (e.key === "Enter") {
-            checkAnswer();
-        }
-    });
+       
     console.log("Showing question!");
 }
 
@@ -127,19 +122,6 @@ function alertAnswer() {
 
     // Button will lead to the next question.
     document.getElementById("ok-btn").addEventListener("click", nextQuestion);
-
-    quizBox.removeEventListener("keydown", function(e) {
-        if (e.key === "Enter") {
-            null;
-        }
-    });
-    
-    alertDisplay.addEventListener("keydown", function(e) {
-        if (e.key === "Enter") {
-            quizBox.removeEventListener("keydown");
-            nextQuestion();
-        }
-    });
 
     console.log("Alert!");
 
