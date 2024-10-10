@@ -3,50 +3,13 @@
 
 ![Am I responsive?](documentation/amiresponsive-medsmory.png)
 
-View the deployed site: [Know your meds](https://github.com/keelam13/Medsmory)
+View the deployed site: [Medsmory](https://github.com/keelam13/Medsmory)
 
 Test your knowledge on medications commonly prescribed for different ailments. This quiz is inspired by the creator's desire to know what the differrent medications are for.
 
 Among the six rights for medication administration is the right medication. The healthcare professional must make sure the the client is receiving the right medication prescribed: medication label must be checked, name, dosage, and strength of the medication must be verified.
 
-This multiple choice quiz will help players get familiarized with different kinds of drugs and will refresh their knowledge on drug mode of action, while having fun.
-
----
-
-## CONTENTS
-
-* [User Experience](#user-experience-ux)
-  * [User Stories](#user-stories)
-
-* [Design](#design)
-  * [Colour Scheme](#colour-scheme)
-  * [Typography](#typography)
-  * [Imagery](#imagery)
-  * [Wireframes](#wireframes)
-  * [Workflow](#workflow)
-
-* [Features](#features)
-  * [General Features on Each Page](#general-features-on-each-page)
-  * [Future Implementations](#future-implementations)
-  * [Accessibility](#accessibility)
-
-* [Technologies Used](#technologies-used)
-  * [Languages Used](#languages-used)
-  * [Other Technologies used](#other-technologies-used)
-
-* [Deployment & Local Development](#deployment--local-development)
-  * [Deployment](#deployment)
-  * [Local Development](#local-development)
-    * [How to Fork](#how-to-fork)
-    * [How to Clone](#how-to-clone)
-
-* [Testing](#testing)
-
-* [Credits](#credits)
-  * [Code Used](#code-used)
-  * [Content](#content)
-  * [Media](#media)
-  * [Acknowledgments](#acknowledgements)
+This multiple choice quiz will help players get familiarized with different kinds of drugs and will refresh their knowledge on drug mechanism of action, while having fun.
 
 ---
 
@@ -66,11 +29,11 @@ This multiple choice quiz will help players get familiarized with different kind
 
 ### Colour Scheme
 
-![Color pallete](documentation/color-palette.webp)
+![Color palette](documentation/color-palette.webp)
 The color palette was generated through the Coolors website.
 * The color #f5b700 was used as the main background.
-* The color #5bc0eb was used as the backgrounf of the alert box.
-* The colors #c3423f and #404e4d in combination were used for in the result display.
+* The color #5bc0eb was used as the background of the alert box.
+* The colors #c3423f and #404e4d in combination were used in the result display.
 
 
 ### Typography
@@ -130,7 +93,7 @@ Photo used for the site was taken from the web, which I included in the [Credits
 
 ### Workflow
 
-How the game works was planned usingthe this workflow made with [Miro](http.miro.com)
+How the game works was planned using the this workflow made with [Miro](http.miro.com)
 
 ![Medsmory Workflow](documentation/medsmory-workflow.png)
 
@@ -142,7 +105,7 @@ The website only has a single page which displays the different sections during 
 
 * The page has a favicon in the browser tab.
 
-![Tab Favicon](documentation/favicon-on-tab.png)
+![Browser Tab Favicon](documentation/favicon-on-tab.png)
 
 * The page displays every section with the game logo.
 
