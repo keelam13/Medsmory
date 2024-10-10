@@ -81,7 +81,6 @@ header {
 }
 
 /* Quiz box */
-
 #quiz-box {
     max-width: 830px;
     margin: 20px auto;
@@ -130,7 +129,6 @@ header {
 }
 
 /* Quit Confirmation box */
-
 .quit-confirm-box {
     max-width: 400px;
     margin: 5em auto auto;
@@ -151,7 +149,6 @@ header {
 }
 
 /* Alert box */
-
 .alert-box {
     max-width: 400px;
     max-height: 400px;
