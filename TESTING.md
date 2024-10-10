@@ -119,8 +119,7 @@ Aside from testing the website of its responsiveness using the dev tools, the [A
     - 
 
 + ### Mistakes
-    - 
-
+    - Mistakes in some commited messages.
 
 ---
   
