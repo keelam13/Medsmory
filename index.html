@@ -7,9 +7,6 @@
     <meta name="keywords" content="Medsmory, quiz, medication quiz, drug quiz, online quiz, medication knowledge, drug knowledge">
     <meta name="author" content="Keevin Aroco">
 
-    <!-- Page Title -->
-    <title>Medsmory</title>
-
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
@@ -17,7 +14,11 @@
 
     <!-- Style sheet -->
      <link rel="stylesheet" href="assets/css/style.css">
+
+     <!-- Page Title -->
+     <title>Medsmory</title>
 </head>
+
 <body>
 
     <!-- Header -->
@@ -40,10 +41,10 @@
 
         <!-- Category box -->
         <section id="category-box" class="hide">
-            <img src="assets/images/prescription.png" alt="a prescription pad and a medicine capsule" class="category-img">
             <h2>Please choose category.</h2>
-                <button id="category-one" class="btn category-btn">Name the drug</button>
-                <button id="category-two" class="btn category-btn">Brand names</button>
+            <img src="assets/images/prescription.png" alt="a prescription pad and a medicine capsule" class="category-img">
+            <button id="category-one" class="btn category-btn">Name the drug</button>
+            <button id="category-two" class="btn category-btn">Brand names</button>
         </section>
 
         <!-- Quiz box -->
@@ -84,13 +85,13 @@
         <section id="result-box" class="hide">
             <h2>Your score!</h2>
             <h3 id="total-score">0 / 20</h3>
-            <div>
-                <button class="btn result-btn" id="play-again-btn">Play again</button>
-                <button class="btn result-btn" id="exit-btn">Exit game</button>
-            </div>
+            <button class="btn result-btn" id="play-again-btn">Play again</button>
+            <button class="btn result-btn" id="exit-btn">Exit game</button>
         </section>
     </main>
-      <script src="assets/js/script.js"></script>
-      <script src="https://kit.fontawesome.com/ce2deac578.js" crossorigin="anonymous"></script>
+
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/ce2deac578.js" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>  
 </body>
 </html>
