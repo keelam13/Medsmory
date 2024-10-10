@@ -279,7 +279,7 @@ Please refer to the [TESTING.md](TESTING.md) file for all test-related documenta
 
 * [Simple Steps Code](https://simplestepscode.com/javascript-quiz-tutorial/), [Medium](https://medium.com/@codepicker57/building-an-interactive-quiz-with-html-css-and-javascript-efe9bd8129e2) and [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k) greatly inspired the building of this project.
 * [Overlay](https://stackoverflow.com/a/26409701) - inspired the creation of an overlay to disable the background of the alert or confirmation displays.
-* [Detect which of two buttons is called](https://stackoverflow.com/a/47175277)
+* [Detect which of two buttons is called](https://stackoverflow.com/a/47175277) - inspired a better coding on how to choose multiple elements, which is in this case buttons. 
 
 ### Content
 
