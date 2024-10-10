@@ -163,7 +163,7 @@ Player will be asked to confirm if they really want to quit the game.
 
 ### Alert Display
 
-The display is a way to tell the player whether the answer was correct or not. It will show a tick icon in color green, if the answer is correct, and otherwise it will show a x icon in red color. The box also contains an "OK" button to acknowledge the alert and move on to the next question.
+The display is a way to tell the player whether the answer was correct or not. It will show a tick icon in color green, if the answer is correct, and otherwise it will show a x icon in red color. It also contains the correct answer to the question. The box also contains an "OK" button to acknowledge the alert and move on to the next question.
 
 * Alert display view for correct answer on larger devices
 
