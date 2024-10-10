@@ -80,9 +80,9 @@ Aside from testing the website of its responsiveness using the dev tools, the [A
     ![CSS Validator](documentation/validation-css.png)
 
 + ### JavaScript
-  No errors or warning were found when passing through the official jshint validator:
+  No errors but 3 warnings were found when passing through the official jshint validator. However this does not affect in any way the flow of the game.
     
-    ![JavaScript Validator]()
+    ![JavaScript Validator](documentation/validation-js.png)
 
 
 + ## LightHouse report
