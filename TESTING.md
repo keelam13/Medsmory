@@ -72,17 +72,17 @@ Aside from testing the website of its responsiveness using the dev tools, the [A
   #### Home Page
     - No errors or warnings were found when passing through the official W3C validator.
 
-    ![Home Page HTML Validator]()
+    ![Home Page HTML Validator](documentation/validation-html.png)
     
 + ### CSS
   No errors or warning were found when passing through the official W3C (Jigsaw) validator:
     
-    ![CSS Validator]()
+    ![CSS Validator](documentation/validation-css.png)
 
-+ ### Javascript
++ ### JavaScript
   No errors or warning were found when passing through the official jshint validator:
     
-    ![CSS Validator]()
+    ![JavaScript Validator]()
 
 
 + ## LightHouse report
