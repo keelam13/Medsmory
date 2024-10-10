@@ -115,11 +115,9 @@ Aside from testing the website of its responsiveness using the dev tools, the [A
       *Solution:* The forward slash which was accidentally typed before the filepath of the Favicon was deleted. 
 
 + ### Unsolved bugs
-
-    - 
+    - Although it does not affect the flow of the quiz or other functions, in the quit confirmation dialog, the "No" button function ist getting called mutliple times when clicking again.
 
 + ### Mistakes
     - Mistakes in some commited messages.
-
 ---
   
