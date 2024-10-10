@@ -154,7 +154,7 @@ function quitConfirmation() {
                 quizBox.classList.add("hide");
                 homeDisplay.classList.remove("hide");
                 resetQuiz();
-                console.log("Yes!")
+                console.log("Yes!");
             } else if (confirmBtns[i].innerText === "No") {
                 quitConfirmDisplay.classList.add("hide");
                 console.log("No!")
