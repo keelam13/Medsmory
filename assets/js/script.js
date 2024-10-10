@@ -153,13 +153,13 @@ function quitConfirmation() {
 
     for (let i = 0; i < confirmBtns.length; i++) {
         confirmBtns[i].addEventListener("click", function () {
-            if (confirmBtns[i].innerText === "Yes") {
+            if (confirmBtns[i].id === "confirm-yes") {
                 quitConfirmDisplay.classList.add("hide");
                 quizBox.classList.add("hide");
                 homeDisplay.classList.remove("hide");
                 reloadPage();
                 console.log("Yes!");
-            } else if (confirmBtns[i].innerText === "No") {
+            } else {
                 quitConfirmDisplay.classList.add("hide");
                 console.log("No!");
             }
