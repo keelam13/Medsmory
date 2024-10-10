@@ -222,6 +222,7 @@ HTML, CSS and JavaScript were used to create this website.
 * [Miro](https://miro.com) - Used to create the workflow.
 * [Git](https://git-scm.com/) - For version control.
 * [Github](https://github.com/) - To save and store the files for the website.
+* [Github Pages](https://pages.github.com/) - To deploy the website.
 * [Google Fonts](https://fonts.google.com/) - To import the fonts used on the website.
 * [Font Awesome](https://fontawesome.com/) - For the iconography on the website.
 * [Google Dev Tools](https://developer.chrome.com/docs/devtools) - To troubleshoot and test features, solve issues with responsiveness and styling.
@@ -232,6 +233,7 @@ HTML, CSS and JavaScript were used to create this website.
 * [Coolors](https://coolors.co/) was used to create the color palette.
 * [Removebg](https://www.remove.bg/) was used to remove backgrounds from images.
 * [Figma](https://www.figma.com) was used to make the wireframes.
+* [Ezgif](https://ezgif.com/) was used to convert videos to GIFs.
 
 ## Deployment & Local Development
 
