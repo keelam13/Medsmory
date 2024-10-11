@@ -35,6 +35,7 @@ function showCategory() {
  */
 function chooseCategory(){
 
+    // Get button elements in the category display and add event listeners to them
     const categoryBtns = document.querySelectorAll(".category-btn");
 
     for (let i = 0; i < categoryBtns.length; i++) {
@@ -166,6 +167,8 @@ function nextQuestion() {
  * This will allow user to confirm to quit or continue on with the quiz.
  */
 function quitConfirmation() {
+
+    // Get button elements in the confirmation display and add event listeners to them
     const confirmBtns = document.querySelectorAll(".confirm-btn");
 
     for (let i = 0; i < confirmBtns.length; i++) {
@@ -205,7 +208,7 @@ function showResult() {
     let scoreDisplay = document.getElementById("total-score");
     scoreDisplay.innerText = `${score} / ${quizData.length}`;
 
-    // This allows user to choose to play again or to exit the game.
+    // Get button elements in the result display and add event listeners to them
     const resultBtns = document.querySelectorAll(".result-btn");
 
     for (let i = 0; i < resultBtns.length; i++) {
