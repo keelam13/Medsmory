@@ -174,9 +174,6 @@ function quitConfirmation() {
     for (let i = 0; i < confirmBtns.length; i++) {
         confirmBtns[i].addEventListener("click", function () {
             if (confirmBtns[i].id === "confirm-yes") {
-                quitConfirmDisplay.classList.add("hide");
-                quizBox.classList.add("hide");
-                homeDisplay.classList.remove("hide");
                 reloadPage();
             } else {
                 quitConfirmDisplay.classList.add("hide");
@@ -217,8 +214,6 @@ function showResult() {
                 resultBox.classList.add("hide");
                 startQuiz();
             } else if (resultBtns[i].innerText === "Exit game") {
-                resultBox.classList.add("hide");
-                homeDisplay.classList.remove("hide");
                 reloadPage();
             }
         });
